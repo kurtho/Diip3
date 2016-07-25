@@ -41,7 +41,8 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         super.viewDidLoad()
         self.collectionView.layer.cornerRadius = self.collectionView.frame.size.width/2
         self.collectionView.clipsToBounds = true
-
+        
+        self.navigationController!.navigationBar.hidden = false
 
         
     }
@@ -64,13 +65,11 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ProfileCell", forIndexPath: indexPath) as! SignUpChooseImageCollectionViewCell
         
         cell.chooseImage.image = UIImage(named: ProfilePictureList.pic[choose].name)
         
-        
-        
+
         return cell
     }
 

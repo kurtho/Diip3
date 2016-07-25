@@ -22,7 +22,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
-    let collectionValue = ["sky", "1", "2", "3"]
+    let collectionValue = ["sky", "1", "2", "3", "4"]
     var segmentNum = 0
     
     override func viewDidLoad() {
