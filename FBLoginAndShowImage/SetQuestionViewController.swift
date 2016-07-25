@@ -13,6 +13,11 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var mySegment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func segmentAction(sender: AnyObject) {
+        segmentSelect()
+        tableView.reloadData()
+    }
+    
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
     let collectionValue = [""]
@@ -35,7 +40,8 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
             break
         case 1:
-            
+            tableView.hidden = true
+
             break
         default:
             break
