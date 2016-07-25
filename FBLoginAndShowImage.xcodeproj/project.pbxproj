@@ -12,7 +12,9 @@
 		292843D41D3F5658001681CD /* MemberInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292843D31D3F5658001681CD /* MemberInfoTableViewController.swift */; };
 		292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292843F31D3F8796001681CD /* SignUpChooseImageViewController.swift */; };
 		292843F61D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292843F51D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift */; };
-		2937A63C1D45ADE1007F83D6 /* QuestionSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63B1D45ADE1007F83D6 /* QuestionSetTableViewController.swift */; };
+		2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */; };
+		2937A6401D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */; };
+		2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */; };
 		294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35A21D37CC8000F36F65 /* PopUpViewController.swift */; };
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
@@ -41,7 +43,9 @@
 		292843D31D3F5658001681CD /* MemberInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberInfoTableViewController.swift; sourceTree = "<group>"; };
 		292843F31D3F8796001681CD /* SignUpChooseImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpChooseImageViewController.swift; sourceTree = "<group>"; };
 		292843F51D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpChooseImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		2937A63B1D45ADE1007F83D6 /* QuestionSetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSetTableViewController.swift; sourceTree = "<group>"; };
+		2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSegmentTableViewCell.swift; sourceTree = "<group>"; };
+		2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQASegmentTableViewCell.swift; sourceTree = "<group>"; };
+		2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetQuestionViewController.swift; sourceTree = "<group>"; };
 		294E35A21D37CC8000F36F65 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				299F1A391D2CF506008555EF /* ProfileHeadCollectionViewCell.swift */,
+				2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */,
+				2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -181,7 +187,7 @@
 		29F63A381D31091C00178065 /* HomeProfile */ = {
 			isa = PBXGroup;
 			children = (
-				2937A63B1D45ADE1007F83D6 /* QuestionSetTableViewController.swift */,
+				2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */,
 				2937A6391D45AD35007F83D6 /* Cell */,
 				2937A6371D45AC37007F83D6 /* Old */,
 				294E35E71D3A226000F36F65 /* ProfileEdit */,
@@ -359,9 +365,10 @@
 				292843F61D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift in Sources */,
 				294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */,
 				292843CF1D3F35F3001681CD /* MembersTableViewController.swift in Sources */,
+				2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */,
 				294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */,
 				292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */,
-				2937A63C1D45ADE1007F83D6 /* QuestionSetTableViewController.swift in Sources */,
+				2937A6401D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift in Sources */,
 				294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */,
 				29F63A5E1D32A0D300178065 /* SearchCollectionViewCell.swift in Sources */,
 				298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */,
@@ -369,6 +376,7 @@
 				294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */,
 				298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */,
 				298FBF821D24250500F03F4E /* HomeViewController.swift in Sources */,
+				2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */,
 				292843D41D3F5658001681CD /* MemberInfoTableViewController.swift in Sources */,
 				299F1A3A1D2CF506008555EF /* ProfileHeadCollectionViewCell.swift in Sources */,
 				29F63A371D30F69C00178065 /* ProfileData.swift in Sources */,
