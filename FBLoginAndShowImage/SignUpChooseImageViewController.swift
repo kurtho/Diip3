@@ -11,15 +11,21 @@ import UIKit
 class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func backWard(sender: AnyObject) {
+        choose -= 1
+        if choose <= -1 {
+            choose = 3
+        }
+        print("choose~\(choose)")
     }
     @IBAction func forWard(sender: AnyObject) {
-        
-        
         choose += 1
+        if choose >= 4 {
+            choose = 0
+        }
         print("choose~~\(choose)")
     }
     @IBAction func signUp(sender: AnyObject) {
-        choose -= 1
+
     }
 
     
