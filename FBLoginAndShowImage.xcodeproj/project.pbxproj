@@ -13,8 +13,8 @@
 		292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292843F31D3F8796001681CD /* SignUpChooseImageViewController.swift */; };
 		292843F61D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292843F51D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift */; };
 		2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */; };
-		2937A6401D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */; };
 		2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */; };
+		2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */; };
 		294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35A21D37CC8000F36F65 /* PopUpViewController.swift */; };
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
@@ -44,8 +44,8 @@
 		292843F31D3F8796001681CD /* SignUpChooseImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpChooseImageViewController.swift; sourceTree = "<group>"; };
 		292843F51D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpChooseImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSegmentTableViewCell.swift; sourceTree = "<group>"; };
-		2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQASegmentTableViewCell.swift; sourceTree = "<group>"; };
 		2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetQuestionViewController.swift; sourceTree = "<group>"; };
+		2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAndACollectionViewCell.swift; sourceTree = "<group>"; };
 		294E35A21D37CC8000F36F65 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				299F1A391D2CF506008555EF /* ProfileHeadCollectionViewCell.swift */,
+				2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */,
 				2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */,
-				2937A63F1D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -368,8 +368,8 @@
 				2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */,
 				294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */,
 				292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */,
-				2937A6401D45BCB9007F83D6 /* MyQASegmentTableViewCell.swift in Sources */,
 				294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */,
+				2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */,
 				29F63A5E1D32A0D300178065 /* SearchCollectionViewCell.swift in Sources */,
 				298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */,
 				298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */,

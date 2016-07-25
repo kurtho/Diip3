@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var mySegment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func segmentAction(sender: AnyObject) {
         segmentSelect()
@@ -20,7 +21,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
-    let collectionValue = [""]
+    let collectionValue = ["sky", "1", "2", "3"]
     var segmentNum = 0
     
     override func viewDidLoad() {
@@ -60,7 +61,23 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionValue.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("myCell", forIndexPath: indexPath) as! QAndACollectionViewCell
+        
+        cell.image.image = UIImage(named: collectionValue[indexPath.row])
+        return cell
+    }
+    
+    
     
     
     
