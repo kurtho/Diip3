@@ -13,6 +13,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var mySegment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var profileImage: UIImageView!
     
     @IBAction func segmentAction(sender: AnyObject) {
         segmentSelect()
@@ -26,6 +27,15 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImage.clipsToBounds = true
+        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
+        collectionView.backgroundColor = UIColor.whiteColor()
+        
+        collectionView.hidden = true
+        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let width = (UIScreen.mainScreen().bounds.width - 2*5)/2
+        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
+//        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
 
         // Do any additional setup after loading the view.
     }
@@ -38,11 +48,13 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     func segmentSelect() {
         switch mySegment.selectedSegmentIndex {
         case 0:
-
+            tableView.hidden = false
+            collectionView.hidden = true
             break
         case 1:
             tableView.hidden = true
-
+            collectionView.hidden = false
+            
             break
         default:
             break

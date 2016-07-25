@@ -592,15 +592,15 @@
                                     <action selector="segmentAction:" destination="j7R-v9-cLY" eventType="valueChanged" id="db1-Gm-2Ka"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Teu-w0-Sfl">
-                                <rect key="frame" x="-4" y="171" width="328" height="183"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Teu-w0-Sfl">
+                                <rect key="frame" x="-8" y="171" width="336" height="348"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="98" id="gd0-2c-B6a">
-                                        <rect key="frame" x="0.0" y="28" width="328" height="98"/>
+                                        <rect key="frame" x="0.0" y="28" width="336" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gd0-2c-B6a" id="Ooz-2u-TaX">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="97.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kW-DC-2sF">
@@ -619,23 +619,23 @@
                                 </connections>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-K6-Qpd">
-                                <rect key="frame" x="-4" y="362" width="328" height="157"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uHA-uI-0Lp">
-                                    <size key="itemSize" width="138" height="117"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <rect key="frame" x="-4" y="171" width="328" height="348"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="uHA-uI-0Lp">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="5" height="10"/>
+                                    <size key="footerReferenceSize" width="5" height="10"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="sk8-Ao-ez3" customClass="QAndACollectionViewCell" customModule="FBLoginAndShowImage" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="117"/>
+                                        <rect key="frame" x="5" y="10" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="138" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-6W-faJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="138" height="117"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -651,6 +651,14 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZHz-ns-19H">
+                                    <rect key="frame" x="0.0" y="0.0" width="328" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hch-5l-upI">
+                                    <rect key="frame" x="0.0" y="110" width="328" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="j7R-v9-cLY" id="6Mf-FK-LGo"/>
                                     <outlet property="delegate" destination="j7R-v9-cLY" id="OZy-tb-xg6"/>
@@ -659,14 +667,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h4Q-Tg-3jQ" firstAttribute="top" secondItem="Teu-w0-Sfl" secondAttribute="bottom" constant="165" id="7Y7-hB-sUV"/>
+                            <constraint firstItem="h4Q-Tg-3jQ" firstAttribute="top" secondItem="Teu-w0-Sfl" secondAttribute="bottom" id="7Y7-hB-sUV"/>
                             <constraint firstItem="ACk-K6-Qpd" firstAttribute="leading" secondItem="O4w-w8-fhF" secondAttribute="leadingMargin" constant="-20" id="H8M-qt-h6Q"/>
                             <constraint firstItem="z13-K4-5wU" firstAttribute="top" secondItem="bOh-Pk-xEk" secondAttribute="bottom" constant="39" id="HSB-Mh-bIn"/>
                             <constraint firstItem="Teu-w0-Sfl" firstAttribute="top" secondItem="nHH-oH-ayq" secondAttribute="bottom" constant="8" id="KqQ-z2-CSP"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1JZ-Ee-Dtc" secondAttribute="leading" id="R3L-kl-w10"/>
                             <constraint firstItem="1JZ-Ee-Dtc" firstAttribute="top" secondItem="bOh-Pk-xEk" secondAttribute="bottom" id="WnF-Z4-hy0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ACk-K6-Qpd" secondAttribute="trailing" constant="-20" id="XUc-yM-avN"/>
-                            <constraint firstItem="ACk-K6-Qpd" firstAttribute="top" secondItem="nHH-oH-ayq" secondAttribute="bottom" constant="199" id="YAg-Wn-eHV"/>
+                            <constraint firstItem="ACk-K6-Qpd" firstAttribute="top" secondItem="nHH-oH-ayq" secondAttribute="bottom" constant="8" id="YAg-Wn-eHV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Teu-w0-Sfl" secondAttribute="trailing" constant="-24" id="b0Z-hf-jre"/>
                             <constraint firstItem="h4Q-Tg-3jQ" firstAttribute="top" secondItem="ACk-K6-Qpd" secondAttribute="bottom" id="bbe-AL-gvd"/>
                             <constraint firstItem="z13-K4-5wU" firstAttribute="leading" secondItem="1JZ-Ee-Dtc" secondAttribute="trailing" constant="23" id="bcP-ev-Ann"/>
@@ -681,6 +689,7 @@
                     <connections>
                         <outlet property="collectionView" destination="ACk-K6-Qpd" id="M8J-PT-8MR"/>
                         <outlet property="mySegment" destination="nHH-oH-ayq" id="2Im-GS-EsZ"/>
+                        <outlet property="profileImage" destination="1JZ-Ee-Dtc" id="OIv-Fs-oIX"/>
                         <outlet property="tableView" destination="Teu-w0-Sfl" id="feo-sc-bhh"/>
                     </connections>
                 </viewController>
