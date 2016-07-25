@@ -68,9 +68,25 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
-        cell.textLabel?.text = cellValue[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
+//        cell.label.text = cellValue[indexPath.row]
+        cell.label.text = cellValue[indexPath.row]
         return cell
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
+        cell.label.text = "123123"
+        cell.textLabel?.text = "123123"
+        tableView.reloadData()
+        print("cell.label~~~\(cell.label.text)")
+        print("textLabel~~~\(cell.textLabel?.text)")
+
+    }
+    
+    func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {
+
     }
     
     
@@ -88,8 +104,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         cell.image.image = UIImage(named: collectionValue[indexPath.row])
         return cell
     }
-    
-    
+
     
     
     

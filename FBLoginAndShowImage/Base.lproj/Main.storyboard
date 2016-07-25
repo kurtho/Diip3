@@ -618,14 +618,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="391" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kW-DC-2sF">
-                                                    <rect key="frame" x="139" y="38" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-R6-W32">
+                                                    <rect key="frame" x="18" y="8" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dPV-R6-W32" firstAttribute="leading" secondItem="Ooz-2u-TaX" secondAttribute="leadingMargin" constant="10" id="681-aR-PPT"/>
+                                                <constraint firstItem="dPV-R6-W32" firstAttribute="top" secondItem="Ooz-2u-TaX" secondAttribute="topMargin" id="FxS-qL-sSs"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="dPV-R6-W32" id="n34-fk-vXz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
