@@ -70,17 +70,21 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
 //        cell.label.text = cellValue[indexPath.row]
-        cell.label.text = cellValue[indexPath.row]
+        cell.label?.text = cellValue[indexPath.row]
+        
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = cell.frame.size.width/10
+        cell.backgroundColor = UIColor.whiteColor()
         return cell
     }
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
-        cell.label.text = "123123"
+        cell.label?.text = "123123"
         cell.textLabel?.text = "123123"
         tableView.reloadData()
-        print("cell.label~~~\(cell.label.text)")
+        print("cell.label~~~\(cell.label?.text)")
         print("textLabel~~~\(cell.textLabel?.text)")
 
     }

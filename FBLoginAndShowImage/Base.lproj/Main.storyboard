@@ -196,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="-450" y="902"/>
         </scene>
-        <!--View Controller-->
+        <!--Mission-->
         <scene sceneID="xXm-Os-nR6">
             <objects>
                 <viewController id="Y3W-2Z-lYO" sceneMemberID="viewController">
@@ -209,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Mission" systemItem="featured" id="zkR-ax-z0T"/>
+                    <tabBarItem key="tabBarItem" title="Mission" image="Settings" id="zkR-ax-z0T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-AS-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,7 +277,7 @@
                             <constraint firstItem="4EA-zI-esS" firstAttribute="leading" secondItem="DPC-BO-Xy3" secondAttribute="leadingMargin" constant="-20" id="pX1-RV-Ay7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Search" systemItem="search" id="JYx-ki-Op2"/>
+                    <tabBarItem key="tabBarItem" title="Mission" image="Search Filled" id="JYx-ki-Op2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="4EA-zI-esS" id="gxk-0i-OgW"/>
@@ -630,9 +630,6 @@
                                                 <constraint firstItem="dPV-R6-W32" firstAttribute="top" secondItem="Ooz-2u-TaX" secondAttribute="topMargin" id="FxS-qL-sSs"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="label" destination="dPV-R6-W32" id="n34-fk-vXz"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1493,11 +1490,11 @@
             </objects>
             <point key="canvasLocation" x="2955" y="-1282"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="cvV-Ad-VJJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s4J-ok-1q3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" badgeValue="Profile" systemItem="contacts" id="3sQ-gZ-rpb"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Contacts" id="3sQ-gZ-rpb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaO-EB-a6c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1726,8 +1723,11 @@
     <resources>
         <image name="Back-48" width="48" height="48"/>
         <image name="Back-64" width="64" height="64"/>
+        <image name="Contacts" width="40" height="40"/>
         <image name="Forward-48" width="48" height="48"/>
         <image name="Forward-64" width="64" height="64"/>
+        <image name="Search Filled" width="30" height="30"/>
+        <image name="Settings" width="30" height="30"/>
         <image name="backGround" width="4000" height="3000"/>
         <image name="backGround1" width="4000" height="3000"/>
     </resources>
