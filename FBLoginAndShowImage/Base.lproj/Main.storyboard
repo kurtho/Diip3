@@ -512,7 +512,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="pIE-kE-5su" eventType="touchUpInside" id="zaj-jJ-hX7"/>
-                                    <segue destination="j7R-v9-cLY" kind="push" id="DOQ-R2-aL4"/>
+                                    <segue destination="j7R-v9-cLY" kind="push" identifier="headProfile" id="DOQ-R2-aL4"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -12,6 +12,7 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
     var choose = 0
 
     
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func backWard(sender: AnyObject) {
         choose -= 1
@@ -71,7 +72,12 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         return cell
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "headProfile" {
+            let vc = segue.destinationViewController as! SetQuestionViewController
+            vc.profileImage.image = UIImage(named:  ProfilePictureList.pic[choose].name)
+        }
+    }
     
     
     

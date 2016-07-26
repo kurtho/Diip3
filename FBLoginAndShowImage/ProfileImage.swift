@@ -39,7 +39,8 @@ class ProfilePictureList {
         ProfilePictureList(name: "1", description: "", content: ""),
         ProfilePictureList(name: "2", description: "", content: ""),
         ProfilePictureList(name: "3", description: "", content: ""),
-        ProfilePictureList(name: "4", description: "", content: "")
+        ProfilePictureList(name: "4", description: "", content: ""),
+        ProfilePictureList(name: "sky", description: "", content: "")
     ]
     var name: String
     var description: String
@@ -51,3 +52,5 @@ class ProfilePictureList {
         self.content = content
     }
 }
+
+
