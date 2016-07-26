@@ -51,7 +51,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let width = (UIScreen.mainScreen().bounds.width - 2*5)/2
         layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
-//        layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+//        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
 
         // Do any additional setup after loading the view.
     }
@@ -129,8 +129,10 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
 
-
-    
-    
+//
+//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
+//    
     
 }
