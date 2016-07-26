@@ -17,16 +17,15 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var collectionCell: UIView!
     
+    var imageName: String?
+    
     @IBAction func segmentAction(sender: AnyObject) {
         segmentSelect()
         tableView.reloadData()
     }
     
-   //待修正~
-    func profileHead(notification: NSNotification) {
-        profileImage.image = (notification.object as? UIImage)
-        print("test123")
-    }
+   
+
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
     let collectPic = ["add"]
@@ -36,11 +35,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    //待修正
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SetQuestionViewController.profileHead(_:)), name: "Create", object: nil)
-        
-        
-        
+        profileImage.image = UIImage(named:  imageName!)
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.size.width/2
         collectionView.backgroundColor = UIColor.lightGrayColor()
@@ -95,20 +90,21 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
-////        cell.label?.text = "123123"
-////        cell.textLabel?.text = cellValue[indexPath.row]
-//        
-//        
-//        print("cell.label~~~\(cell.label?.text)")
-//        print("textLabel~~~\(cell.textLabel?.text)")
-//
-//    }
-//
-//    func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {
-//
-//    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
+//        cell.label?.text = "123123"
+//        cell.textLabel?.text = cellValue[indexPath.row]
+        
+        
+        print("cell.label~~~\(cell.label?.text)")
+        print("textLabel~~~\(cell.textLabel?.text)")
+
+    }
+
+    func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {
+
+    }
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -135,4 +131,16 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 //    }
 //    
     
+    
+    
+//    func showPopUp() {
+//        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
+//        PopUpViewController
+//        self.addChildViewController(popOverVC)
+//        popOverVC.view.frame = self.view.frame
+//        self.view.addSubview(popOverVC.view)
+//        popOverVC.didMoveToParentViewController(self)
+//        
+//    }
+//    
 }

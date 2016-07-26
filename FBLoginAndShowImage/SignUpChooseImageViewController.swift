@@ -26,12 +26,12 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         if choose >= 4 {
             choose = 0
         }
+        print("forWard Button~~~\(ProfilePictureList.pic[choose].name)")
         collectionView.reloadData()
     }
     @IBAction func signUp(sender: AnyObject) {
         
-        NSNotificationCenter.defaultCenter().postNotificationName("Create", object: ProfilePictureList.pic[choose].name)
-        any = ProfilePictureList.pic[choose].name
+        
     }
 
 
@@ -79,9 +79,10 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "headProfile" {
             let destination = segue.destinationViewController as! SetQuestionViewController
-            destination.profileImage?.image = UIImage(named: ProfilePictureList.pic[choose].name)
-            print("profile~~~\(ProfilePictureList.pic[choose].name)")
-//轉型
+            destination.imageName = ProfilePictureList.pic[choose].name
+
+print("profile~~~\(ProfilePictureList.pic[choose].name)")
+
         }
     }
     
