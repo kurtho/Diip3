@@ -9,6 +9,9 @@
 import UIKit
 
 class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    var choose = 0
+
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func backWard(sender: AnyObject) {
         choose -= 1
@@ -65,8 +68,6 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         
         cell.chooseImage.image = UIImage(named: ProfilePictureList.pic[choose].name)
         
-
-
         return cell
     }
 
@@ -74,7 +75,7 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
     
     
     
-    var choose = 0
+    
 
     
 

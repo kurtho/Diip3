@@ -70,7 +70,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
 //        cell.label.text = cellValue[indexPath.row]
-        cell.textLabel?.text = cellValue[indexPath.row]
+        cell.label?.text = cellValue[indexPath.row]
         
         cell.cellView.clipsToBounds = true
         cell.cellView.layer.cornerRadius = cell.cellView.frame.size.width/16
