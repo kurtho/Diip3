@@ -121,7 +121,10 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("myCell", forIndexPath: indexPath) as! QAndACollectionViewCell
-        
+        cell.backgroundColor = UIColor.whiteColor()
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = cell.frame.size.width/16
+        cell.label.text = collectLabel[indexPath.row]
         cell.image.image = UIImage(named: collectPic[indexPath.row])
         return cell
     }
