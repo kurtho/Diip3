@@ -15,27 +15,22 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         if choose <= -1 {
             choose = 3
         }
-        print("choose~\(choose)")
+        collectionView.reloadData()
     }
     @IBAction func forWard(sender: AnyObject) {
         choose += 1
         if choose >= 4 {
             choose = 0
         }
-        print("choose~~\(choose)")
+        collectionView.reloadData()
     }
     @IBAction func signUp(sender: AnyObject) {
 
     }
 
-    
-    
-    
-//    var visibleItems: [AnyObject] = self.collectionView.indexPathsForVisibleItems()
-//    var currentItem: NSIndexPath = visibleItems[0] as! NSIndexPath
-//    var nextItem: NSIndexPath = NSIndexPath.indexPathForItem(currentItem.item+1, inSection: currentItem.section)
-//    self.collectionView.scrollToItemAtIndexPath(nextItem, atScrollPosition: UICollectionViewScrollPositionTop, animated: true)
 
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +38,7 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         self.collectionView.clipsToBounds = true
         
         self.navigationController!.navigationBar.hidden = false
+
 
         
     }
@@ -69,6 +65,7 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         
         cell.chooseImage.image = UIImage(named: ProfilePictureList.pic[choose].name)
         
+
 
         return cell
     }

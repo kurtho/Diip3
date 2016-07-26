@@ -562,9 +562,10 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-oH-ayq">
                                 <rect key="frame" x="10" y="179" width="355" height="29"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Basic"/>
+                                    <segment title="My Q&amp;A"/>
                                 </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="segmentAction:" destination="j7R-v9-cLY" eventType="valueChanged" id="db1-Gm-2Ka"/>
                                 </connections>
@@ -618,18 +619,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="391" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-R6-W32">
-                                                    <rect key="frame" x="18" y="8" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajH-U0-d3T">
+                                                    <rect key="frame" x="20" y="8" width="351" height="81.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-R6-W32">
+                                                            <rect key="frame" x="157" y="31" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dPV-R6-W32" firstAttribute="leading" secondItem="Ooz-2u-TaX" secondAttribute="leadingMargin" constant="10" id="681-aR-PPT"/>
-                                                <constraint firstItem="dPV-R6-W32" firstAttribute="top" secondItem="Ooz-2u-TaX" secondAttribute="topMargin" id="FxS-qL-sSs"/>
+                                                <constraint firstAttribute="bottom" secondItem="ajH-U0-d3T" secondAttribute="bottom" constant="8" id="Otz-QG-8Y3"/>
+                                                <constraint firstItem="ajH-U0-d3T" firstAttribute="leading" secondItem="Ooz-2u-TaX" secondAttribute="leading" constant="20" id="hb0-nf-0Nd"/>
+                                                <constraint firstItem="ajH-U0-d3T" firstAttribute="top" secondItem="Ooz-2u-TaX" secondAttribute="top" constant="8" id="njg-DX-00l"/>
+                                                <constraint firstAttribute="trailing" secondItem="ajH-U0-d3T" secondAttribute="trailing" constant="20" id="vQC-vA-DpJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellView" destination="ajH-U0-d3T" id="Bqi-R5-qBq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -644,7 +657,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h4Q-Tg-3jQ" firstAttribute="top" secondItem="Teu-w0-Sfl" secondAttribute="bottom" id="7Y7-hB-sUV"/>
                             <constraint firstItem="z13-K4-5wU" firstAttribute="top" secondItem="bOh-Pk-xEk" secondAttribute="bottom" constant="47" id="HSB-Mh-bIn"/>

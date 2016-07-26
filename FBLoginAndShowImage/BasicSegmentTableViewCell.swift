@@ -10,7 +10,10 @@ import UIKit
 
 class BasicSegmentTableViewCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var cellView: UIView!
 
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

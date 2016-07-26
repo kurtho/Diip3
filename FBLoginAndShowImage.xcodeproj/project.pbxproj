@@ -118,9 +118,9 @@
 		2937A6391D45AD35007F83D6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				299F1A391D2CF506008555EF /* ProfileHeadCollectionViewCell.swift */,
-				2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */,
 				2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */,
+				2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */,
+				299F1A391D2CF506008555EF /* ProfileHeadCollectionViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
