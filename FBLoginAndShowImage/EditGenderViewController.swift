@@ -37,7 +37,6 @@ class EditGenderViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
 //
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(EdirProfileTableViewController.genderChangeNotif), name: "Notif1", object: nil)        
 
     }
     

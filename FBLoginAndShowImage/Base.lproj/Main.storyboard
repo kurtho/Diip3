@@ -587,16 +587,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-6W-faJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
+                                                    <rect key="frame" x="22.5" y="-12" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Cay-w7-Cge"/>
+                                                        <constraint firstAttribute="height" constant="50" id="mtf-Qa-OSh"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Qu3-6W-faJ" secondAttribute="trailing" id="0Kc-Ov-fzn"/>
-                                            <constraint firstItem="Qu3-6W-faJ" firstAttribute="leading" secondItem="sk8-Ao-ez3" secondAttribute="leading" id="NKy-1B-FHc"/>
-                                            <constraint firstItem="Qu3-6W-faJ" firstAttribute="top" secondItem="sk8-Ao-ez3" secondAttribute="top" id="UFY-Mr-NSS"/>
-                                            <constraint firstAttribute="bottom" secondItem="Qu3-6W-faJ" secondAttribute="bottom" id="pZe-x1-1bL"/>
+                                            <constraint firstItem="Qu3-6W-faJ" firstAttribute="top" secondItem="sk8-Ao-ez3" secondAttribute="topMargin" constant="-20" id="xZT-It-eLa"/>
+                                            <constraint firstItem="Qu3-6W-faJ" firstAttribute="centerX" secondItem="sk8-Ao-ez3" secondAttribute="centerX" id="zkr-yb-JUm"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="image" destination="Qu3-6W-faJ" id="EuF-bJ-fjz"/>
@@ -622,14 +624,18 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajH-U0-d3T">
                                                     <rect key="frame" x="20" y="8" width="351" height="81.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-R6-W32">
-                                                            <rect key="frame" x="157" y="31" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-R6-W32">
+                                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dPV-R6-W32" firstAttribute="top" secondItem="ajH-U0-d3T" secondAttribute="top" constant="8" id="QYs-zs-lZZ"/>
+                                                        <constraint firstItem="dPV-R6-W32" firstAttribute="leading" secondItem="ajH-U0-d3T" secondAttribute="leading" constant="8" id="kEL-88-gHn"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -641,7 +647,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="cellView" destination="ajH-U0-d3T" id="Bqi-R5-qBq"/>
+                                            <outlet property="cellView" destination="ajH-U0-d3T" id="08c-sG-jhR"/>
+                                            <outlet property="label" destination="dPV-R6-W32" id="V0v-jO-T3N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -746,7 +753,6 @@
         <!--Home View Controller-->
         <scene sceneID="3S3-DV-GR6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n4d-xr-Mhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9sq-iS-4Ow" customClass="HomeViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S8L-KO-sfW"/>
@@ -1025,6 +1031,7 @@
                         <outlet property="traitLabel" destination="tt7-05-HAf" id="sTy-Hr-gei"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4d-xr-Mhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2436" y="-1282"/>
         </scene>

@@ -15,22 +15,37 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var collectionCell: UIView!
     
     @IBAction func segmentAction(sender: AnyObject) {
         segmentSelect()
         tableView.reloadData()
     }
     
+   //待修正~
+    func profileHead(notification: NSNotification) {
+        profileImage.image = (notification.object as? UIImage)
+        print("test123")
+    }
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
-
+    let collectPic = ["add"]
+    let collectLabel = ["add a Question"]
+    
     var segmentNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    //待修正
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SetQuestionViewController.profileHead(_:)), name: "Create", object: nil)
+        
+        
+        
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.size.width/2
-        collectionView.backgroundColor = UIColor.whiteColor()
+        collectionView.backgroundColor = UIColor.lightGrayColor()
+        
+        tableView.backgroundColor = UIColor.lightGrayColor()
         
         collectionView.hidden = true
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -70,12 +85,9 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
-//        cell.label.text = cellValue[indexPath.row]
+        cell.cellView?.clipsToBounds = true
+        cell.cellView?.layer.cornerRadius = cell.cellView.frame.size.width/16
         cell.label?.text = cellValue[indexPath.row]
-        
-        cell.cellView.clipsToBounds = true
-        cell.cellView.layer.cornerRadius = cell.cellView.frame.size.width/16
-//        cell.cellView.backgroundColor = UIColor.lightGrayColor()
         
         
         
@@ -104,13 +116,13 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ProfilePictureList.pic.count
+        return collectPic.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("myCell", forIndexPath: indexPath) as! QAndACollectionViewCell
         
-        cell.image.image = UIImage(named: ProfilePictureList.pic[indexPath.row].name)
+        cell.image.image = UIImage(named: collectPic[indexPath.row])
         return cell
     }
 

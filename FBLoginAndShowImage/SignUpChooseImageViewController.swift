@@ -29,6 +29,8 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         collectionView.reloadData()
     }
     @IBAction func signUp(sender: AnyObject) {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("Create", object: ProfilePictureList.pic[choose].name)
 
     }
 
@@ -72,12 +74,7 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         return cell
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "headProfile" {
-            let vc = segue.destinationViewController as! SetQuestionViewController
-            vc.profileImage.image = UIImage(named:  ProfilePictureList.pic[choose].name)
-        }
-    }
+
     
     
     

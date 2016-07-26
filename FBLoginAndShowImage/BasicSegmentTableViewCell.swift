@@ -10,6 +10,7 @@ import UIKit
 
 class BasicSegmentTableViewCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
+    
     @IBOutlet weak var cellView: UIView!
 
     

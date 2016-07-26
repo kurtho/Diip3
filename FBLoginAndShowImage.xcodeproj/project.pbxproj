@@ -107,9 +107,9 @@
 		2937A6381D45AC53007F83D6 /* Old */ = {
 			isa = PBXGroup;
 			children = (
+				294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */,
 				294E35EC1D3A348300F36F65 /* EditRelationViewController.swift */,
 				294E35A21D37CC8000F36F65 /* PopUpViewController.swift */,
-				294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */,
 				294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */,
 			);
 			name = Old;
