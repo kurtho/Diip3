@@ -16,6 +16,7 @@
 		2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */; };
 		2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */; };
 		2937A6651D476F3F007F83D6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6641D476F3F007F83D6 /* SettingViewController.swift */; };
+		2937A6671D47A8C6007F83D6 /* EditAndTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6661D47A8C6007F83D6 /* EditAndTypeViewController.swift */; };
 		294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35A21D37CC8000F36F65 /* PopUpViewController.swift */; };
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
@@ -48,6 +49,7 @@
 		2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetQuestionViewController.swift; sourceTree = "<group>"; };
 		2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAndACollectionViewCell.swift; sourceTree = "<group>"; };
 		2937A6641D476F3F007F83D6 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2937A6661D47A8C6007F83D6 /* EditAndTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAndTypeViewController.swift; sourceTree = "<group>"; };
 		294E35A21D37CC8000F36F65 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */,
+				2937A6661D47A8C6007F83D6 /* EditAndTypeViewController.swift */,
 				2937A6391D45AD35007F83D6 /* Cell */,
 				2937A6371D45AC37007F83D6 /* Old */,
 				294E35E71D3A226000F36F65 /* ProfileEdit */,
@@ -381,6 +384,7 @@
 				294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */,
 				292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */,
 				294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */,
+				2937A6671D47A8C6007F83D6 /* EditAndTypeViewController.swift in Sources */,
 				2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */,
 				29F63A5E1D32A0D300178065 /* SearchCollectionViewCell.swift in Sources */,
 				298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */,

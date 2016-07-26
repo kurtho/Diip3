@@ -125,22 +125,22 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
 
-//
-//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-//    
+
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        showPopUp()
+    }
     
     
     
-//    func showPopUp() {
-//        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
-//        PopUpViewController
-//        self.addChildViewController(popOverVC)
-//        popOverVC.view.frame = self.view.frame
-//        self.view.addSubview(popOverVC.view)
-//        popOverVC.didMoveToParentViewController(self)
-//        
-//    }
-//    
+    
+    func showPopUp() {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
+        EditAndTypeViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMoveToParentViewController(self)
+        
+    }
+    
 }
