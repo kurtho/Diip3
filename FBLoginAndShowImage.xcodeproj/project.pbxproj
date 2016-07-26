@@ -15,6 +15,7 @@
 		2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */; };
 		2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */; };
 		2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */; };
+		2937A6651D476F3F007F83D6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6641D476F3F007F83D6 /* SettingViewController.swift */; };
 		294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35A21D37CC8000F36F65 /* PopUpViewController.swift */; };
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
@@ -46,6 +47,7 @@
 		2937A63D1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSegmentTableViewCell.swift; sourceTree = "<group>"; };
 		2937A65F1D45E322007F83D6 /* SetQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetQuestionViewController.swift; sourceTree = "<group>"; };
 		2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAndACollectionViewCell.swift; sourceTree = "<group>"; };
+		2937A6641D476F3F007F83D6 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		294E35A21D37CC8000F36F65 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		2937A6631D476EFE007F83D6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2937A6641D476F3F007F83D6 /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		294E35E71D3A226000F36F65 /* ProfileEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 				2937A63A1D45AD67007F83D6 /* Cell */,
 				29F63A381D31091C00178065 /* HomeProfile */,
 				29F63A5B1D329CA000178065 /* Search */,
+				2937A6631D476EFE007F83D6 /* Setting */,
 				298470B11D2A9D1500913250 /* LocalFile */,
 				29F63A5C1D329CBB00178065 /* Others */,
 			);
@@ -360,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FB0E5A1D368103005FB3A3 /* EdirProfileTableViewController.swift in Sources */,
+				2937A6651D476F3F007F83D6 /* SettingViewController.swift in Sources */,
 				29F63A601D32A3EC00178065 /* SearchViewController.swift in Sources */,
 				292843D11D3F49CA001681CD /* MembersTableViewCell.swift in Sources */,
 				292843F61D3F9778001681CD /* SignUpChooseImageCollectionViewCell.swift in Sources */,

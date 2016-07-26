@@ -81,7 +81,6 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
             let destination = segue.destinationViewController as! SetQuestionViewController
             destination.imageName = ProfilePictureList.pic[choose].name
 
-print("profile~~~\(ProfilePictureList.pic[choose].name)")
 
         }
     }

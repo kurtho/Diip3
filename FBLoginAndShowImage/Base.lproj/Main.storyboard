@@ -77,7 +77,7 @@
                                                 </button>
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8du-iD-MOg">
                                                     <rect key="frame" x="81" y="415" width="220" height="45"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="TQi-tf-0vA"/>
                                                         <constraint firstAttribute="width" constant="220" id="jmd-Ho-RHR"/>
@@ -194,7 +194,7 @@
         <!--Mission-->
         <scene sceneID="xXm-Os-nR6">
             <objects>
-                <viewController id="Y3W-2Z-lYO" sceneMemberID="viewController">
+                <viewController id="Y3W-2Z-lYO" customClass="SettingViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b1b-j2-rit"/>
                         <viewControllerLayoutGuide type="bottom" id="5LE-gH-Gnp"/>
@@ -202,7 +202,20 @@
                     <view key="view" contentMode="scaleToFill" id="6Ya-oN-Bva">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-UR-hQj">
+                                <rect key="frame" x="164" y="319" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logOutFB:" destination="Y3W-2Z-lYO" eventType="touchUpInside" id="1Tp-E9-hE2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerX" secondItem="6Ya-oN-Bva" secondAttribute="centerX" id="PES-oZ-3dI"/>
+                            <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerY" secondItem="6Ya-oN-Bva" secondAttribute="centerY" id="VZP-6g-cG7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mission" image="Settings" id="zkR-ax-z0T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
