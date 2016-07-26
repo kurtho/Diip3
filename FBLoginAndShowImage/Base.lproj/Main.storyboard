@@ -572,7 +572,7 @@
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-K6-Qpd">
                                 <rect key="frame" x="0.0" y="215" width="375" height="403"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnD-WD-FqF">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnD-WD-FqF">
                                     <size key="itemSize" width="95" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -587,7 +587,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-6W-faJ">
-                                                    <rect key="frame" x="22.5" y="28" width="50" height="50"/>
+                                                    <rect key="frame" x="22" y="28" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Cay-w7-Cge"/>
                                                         <constraint firstAttribute="height" constant="50" id="mtf-Qa-OSh"/>
@@ -597,7 +597,7 @@
                                                     <rect key="frame" x="26" y="97" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -611,6 +611,40 @@
                                         <connections>
                                             <outlet property="image" destination="Qu3-6W-faJ" id="EuF-bJ-fjz"/>
                                             <outlet property="label" destination="xAX-yx-JEe" id="ySc-Tv-NjF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="vJW-X4-gvz" customClass="QAndACollectionViewCell" customModule="FBLoginAndShowImage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="151.5" width="95" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Upb-St-YJi">
+                                                    <rect key="frame" x="22" y="28" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="LUK-hH-bwL"/>
+                                                        <constraint firstAttribute="height" constant="50" id="hfs-Yn-quY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azL-pc-dfa">
+                                                    <rect key="frame" x="26" y="97" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="azL-pc-dfa" firstAttribute="centerX" secondItem="Upb-St-YJi" secondAttribute="centerX" id="E0d-KT-0Af"/>
+                                            <constraint firstItem="Upb-St-YJi" firstAttribute="top" secondItem="azL-pc-dfa" secondAttribute="bottom" constant="-90" id="EhE-Zi-hj1"/>
+                                            <constraint firstItem="Upb-St-YJi" firstAttribute="centerX" secondItem="vJW-X4-gvz" secondAttribute="centerX" id="ZTa-LC-nFy"/>
+                                            <constraint firstItem="Upb-St-YJi" firstAttribute="top" secondItem="vJW-X4-gvz" secondAttribute="topMargin" constant="20" id="oX4-8a-uZI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="Upb-St-YJi" id="Whg-k8-Iqy"/>
+                                            <outlet property="label" destination="azL-pc-dfa" id="W2c-j2-7KL"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -666,8 +700,8 @@
                                     <outlet property="delegate" destination="j7R-v9-cLY" id="5Wp-Fz-JxA"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z13-K4-5wU">
-                                <rect key="frame" x="135" y="111" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kurt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z13-K4-5wU">
+                                <rect key="frame" x="135" y="111" width="32.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
