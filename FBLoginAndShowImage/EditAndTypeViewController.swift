@@ -13,12 +13,15 @@ class EditAndTypeViewController: UIViewController {
     @IBOutlet weak var myTextView: UIView!
     
     
+    @IBAction func invisibleButton(sender: AnyObject) {
+        removeAnimate()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showAnimation()
         myTextView.becomeFirstResponder()
-
+        hideKeyboardWhenTappedAround()
         
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
         //        self.navigationController?.navigationBarHidden = true
@@ -65,7 +68,9 @@ class EditAndTypeViewController: UIViewController {
                 }
         });
     }
-    
-    
 
 }
+
+
+
+
