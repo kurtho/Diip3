@@ -16,7 +16,13 @@ class EditAndTypeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showAnimation()
+        myTextView.becomeFirstResponder()
 
+        
+        self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
+        //        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Do any additional setup after loading the view.
     }
 
@@ -35,5 +41,19 @@ class EditAndTypeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    func showAnimation() {
+        self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
+        self.view.alpha = 0.0
+        UIView.animateWithDuration(0.25, animations: {
+            self.view.alpha = 1.0
+            self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        })
+    }
+    
+    
+    
 
 }
