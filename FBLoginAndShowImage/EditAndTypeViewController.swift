@@ -53,6 +53,18 @@ class EditAndTypeViewController: UIViewController {
         })
     }
     
+    func removeAnimate()
+    {
+        UIView.animateWithDuration(0.25, animations: {
+            self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
+            self.view.alpha = 0.0;
+            }, completion:{(finished : Bool)  in
+                if (finished)
+                {
+                    self.view.removeFromSuperview()
+                }
+        });
+    }
     
     
 

@@ -780,47 +780,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fai-Sf-gQ0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-qh-a1w">
-                                <rect key="frame" x="33" y="149" width="308" height="289"/>
+                                <rect key="frame" x="33" y="180" width="308" height="258"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k99-Od-MHD">
-                                        <rect key="frame" x="-7" y="0.0" width="315" height="281"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="250"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-NF-mrV">
-                                                <rect key="frame" x="15" y="15" width="24.5" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你對於小剝皮在第六季" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-EY-RGU">
-                                                <rect key="frame" x="15" y="66" width="170" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="10g-2K-KsE">
-                                                <rect key="frame" x="15" y="175" width="292" height="98"/>
+                                                <rect key="frame" x="8" y="146" width="292" height="64"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw0-DH-GmL">
+                                                <rect key="frame" x="159" y="212" width="141" height="30"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shX-Ql-5Hh">
+                                                <rect key="frame" x="10" y="212" width="141" height="30"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-NF-mrV">
+                                                <rect key="frame" x="8" y="20" width="24.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="你對於小剝皮在第六季" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-EY-RGU">
+                                                <rect key="frame" x="8" y="61" width="170" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="bs4-NF-mrV" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="15" id="6rp-2R-lv9"/>
-                                            <constraint firstItem="Pnl-EY-RGU" firstAttribute="top" secondItem="bs4-NF-mrV" secondAttribute="bottom" constant="27" id="MM5-im-OyG"/>
-                                            <constraint firstItem="bs4-NF-mrV" firstAttribute="top" secondItem="k99-Od-MHD" secondAttribute="top" constant="15" id="PKi-cQ-fbs"/>
-                                            <constraint firstItem="10g-2K-KsE" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="15" id="PYX-c0-gnO"/>
-                                            <constraint firstItem="10g-2K-KsE" firstAttribute="top" secondItem="Pnl-EY-RGU" secondAttribute="bottom" constant="88" id="ao1-j6-s8o"/>
+                                            <constraint firstItem="bw0-DH-GmL" firstAttribute="leading" secondItem="shX-Ql-5Hh" secondAttribute="trailing" constant="8" id="32M-qe-3Bh"/>
+                                            <constraint firstItem="bs4-NF-mrV" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="8" id="6rp-2R-lv9"/>
+                                            <constraint firstAttribute="bottom" secondItem="bw0-DH-GmL" secondAttribute="bottom" constant="8" id="9C1-gp-brb"/>
+                                            <constraint firstItem="shX-Ql-5Hh" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="10" id="Hu2-gW-9DS"/>
+                                            <constraint firstItem="bs4-NF-mrV" firstAttribute="top" secondItem="k99-Od-MHD" secondAttribute="top" constant="20" id="PKi-cQ-fbs"/>
+                                            <constraint firstItem="10g-2K-KsE" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="8" id="PYX-c0-gnO"/>
+                                            <constraint firstAttribute="trailing" secondItem="bw0-DH-GmL" secondAttribute="trailing" constant="8" id="SQZ-2l-NFa"/>
+                                            <constraint firstItem="shX-Ql-5Hh" firstAttribute="width" secondItem="bw0-DH-GmL" secondAttribute="width" id="VoH-V8-KHd"/>
+                                            <constraint firstAttribute="bottom" secondItem="shX-Ql-5Hh" secondAttribute="bottom" constant="8" id="XxQ-s0-SvQ"/>
+                                            <constraint firstItem="10g-2K-KsE" firstAttribute="top" secondItem="Pnl-EY-RGU" secondAttribute="bottom" constant="64" id="ZhD-7m-YIJ"/>
                                             <constraint firstAttribute="trailing" secondItem="10g-2K-KsE" secondAttribute="trailing" constant="8" id="fYc-4n-AN7"/>
-                                            <constraint firstItem="Pnl-EY-RGU" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="15" id="x9C-wr-ZJh"/>
-                                            <constraint firstAttribute="bottom" secondItem="10g-2K-KsE" secondAttribute="bottom" constant="8" id="zPY-Jg-rxK"/>
+                                            <constraint firstItem="Pnl-EY-RGU" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="8" id="fan-mb-GZF"/>
+                                            <constraint firstItem="Pnl-EY-RGU" firstAttribute="top" secondItem="bs4-NF-mrV" secondAttribute="bottom" constant="17" id="nlQ-5N-pet"/>
+                                            <constraint firstItem="bw0-DH-GmL" firstAttribute="top" secondItem="10g-2K-KsE" secondAttribute="bottom" constant="2" id="pfA-7Q-zCK"/>
+                                            <constraint firstItem="bw0-DH-GmL" firstAttribute="leading" secondItem="shX-Ql-5Hh" secondAttribute="trailing" constant="8" id="tmj-A0-Ygk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="k99-Od-MHD" firstAttribute="top" secondItem="5ae-qh-a1w" secondAttribute="top" id="HMP-Hu-NNX"/>
-                                    <constraint firstItem="k99-Od-MHD" firstAttribute="leading" secondItem="5ae-qh-a1w" secondAttribute="leading" constant="-7" id="IN2-va-HEG"/>
+                                    <constraint firstItem="k99-Od-MHD" firstAttribute="leading" secondItem="5ae-qh-a1w" secondAttribute="leading" id="IN2-va-HEG"/>
                                     <constraint firstAttribute="trailing" secondItem="k99-Od-MHD" secondAttribute="trailing" id="efT-al-fZO"/>
                                     <constraint firstAttribute="bottom" secondItem="k99-Od-MHD" secondAttribute="bottom" constant="8" id="xC0-Sa-xft"/>
                                 </constraints>
@@ -828,10 +850,14 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5ae-qh-a1w" firstAttribute="top" secondItem="1Aa-Uv-rbD" secondAttribute="bottom" constant="129" id="1H5-1q-8HS"/>
                             <constraint firstItem="dNq-mq-ZyK" firstAttribute="top" secondItem="5ae-qh-a1w" secondAttribute="bottom" constant="229" id="7wc-kM-QoW"/>
+                            <constraint firstAttribute="trailing" secondItem="fai-Sf-gQ0" secondAttribute="trailing" id="Lgr-1b-ctA"/>
+                            <constraint firstItem="dNq-mq-ZyK" firstAttribute="top" secondItem="fai-Sf-gQ0" secondAttribute="bottom" id="Oef-aL-1vh"/>
+                            <constraint firstItem="5ae-qh-a1w" firstAttribute="centerX" secondItem="7oB-hK-9OV" secondAttribute="centerX" id="Uxy-9s-0FL"/>
                             <constraint firstItem="5ae-qh-a1w" firstAttribute="leading" secondItem="7oB-hK-9OV" secondAttribute="leadingMargin" constant="13" id="VWA-Me-jDE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5ae-qh-a1w" secondAttribute="trailing" constant="13" id="Xp6-6d-8yN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ae-qh-a1w" secondAttribute="trailing" constant="14" id="Xp6-6d-8yN"/>
+                            <constraint firstItem="fai-Sf-gQ0" firstAttribute="top" secondItem="1Aa-Uv-rbD" secondAttribute="bottom" id="hJW-me-8mc"/>
+                            <constraint firstItem="fai-Sf-gQ0" firstAttribute="leading" secondItem="7oB-hK-9OV" secondAttribute="leading" id="mz3-t0-2RT"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
