@@ -35,6 +35,8 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         profileImage.image = UIImage(named: imageName!)
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.size.width/2
@@ -91,26 +93,17 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var questions = cellValue[indexPath.row]
-        
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
-        EditAndTypeViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMoveToParentViewController(self)
-        
-        popOverVC.textContent.text = questions
-        
 //        let questions = cellValue[indexPath.row]
-//        let popUpVC = UIStoryboard(name: "main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as! EditAndTypeViewController
-//        popUpVC.textContent.text = "1234"
-
-
+//        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
+//        EditAndTypeViewController
+        let questions = cellValue[indexPath.row]
+        testFunction(questions)
+        
+        
     }
 
     func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {
-
+        
     }
     
     
@@ -156,7 +149,18 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
         
-        popOverVC.textContent.text = "1234"
+    }
+    
+    func testFunction(string: String) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as! EditAndTypeViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMoveToParentViewController(self)
+        popOverVC.textContent.text = string
+       // let result = string
+        
+        //return result
     }
     
 }
