@@ -83,7 +83,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
         cell.cellView?.clipsToBounds = true
-        cell.cellView?.layer.cornerRadius = cell.cellView.frame.size.width/16
+        cell.cellView?.layer.cornerRadius = cell.cellView.frame.size.width/18
         cell.label?.text = cellValue[indexPath.row]
         
         
@@ -93,9 +93,6 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let questions = cellValue[indexPath.row]
-//        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
-//        EditAndTypeViewController
         let questions = cellValue[indexPath.row]
         testFunction(questions)
         
@@ -143,12 +140,10 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     func showPopUp() {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
         EditAndTypeViewController
-        
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
-        
     }
     
     func testFunction(string: String) {
@@ -158,9 +153,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
         popOverVC.textContent.text = string
-       // let result = string
-        
-        //return result
+    
     }
     
 }

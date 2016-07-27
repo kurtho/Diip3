@@ -85,8 +85,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
             }else {
                 // No user is signed in.
                 
-                
-
             }
             self.logginButton.center = self.fbView.center
             self.view.addSubview(self.logginButton)
@@ -96,8 +94,6 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
             self.logginButton.hidden = false
             self.reloadInputViews()
         }
-        
-        
         
 
 //         Do any additional setup after loading the view, typically from a nib.

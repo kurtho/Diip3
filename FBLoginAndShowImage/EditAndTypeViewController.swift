@@ -31,14 +31,15 @@ class EditAndTypeViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.myView.clipsToBounds = true
+        self.myView.layer.cornerRadius = myView.frame.size.width / 15
         
         showAnimation()
         myTextView.becomeFirstResponder()
         hideKeyboardWhenTappedAround()
         
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
-        //        self.navigationController?.navigationBarHidden = true
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
