@@ -15,6 +15,8 @@ class EditAndTypeViewController: UIViewController {
     
     @IBAction func invisibleButton(sender: AnyObject) {
         removeAnimate()
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
     
     override func viewDidLoad() {
