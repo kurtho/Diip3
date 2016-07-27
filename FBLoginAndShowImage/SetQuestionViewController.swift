@@ -35,7 +35,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileImage.image = UIImage(named:  imageName!)
+        profileImage.image = UIImage(named: imageName!)
         profileImage.clipsToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.size.width/2
         collectionView.backgroundColor = UIColor.lightGrayColor()
@@ -72,7 +72,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
-    
+  // MARK: - table view cell
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellValue.count
     }
@@ -91,20 +91,31 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var questions = cellValue[indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! BasicSegmentTableViewCell
-//        cell.label?.text = "123123"
-//        cell.textLabel?.text = cellValue[indexPath.row]
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
+        EditAndTypeViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMoveToParentViewController(self)
         
+        popOverVC.textContent.text = questions
         
-        print("cell.label~~~\(cell.label?.text)")
-        print("textLabel~~~\(cell.textLabel?.text)")
+//        let questions = cellValue[indexPath.row]
+//        let popUpVC = UIStoryboard(name: "main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as! EditAndTypeViewController
+//        popUpVC.textContent.text = "1234"
+
 
     }
 
     func tableView(tableView: UITableView, didEndEditingRowAtIndexPath indexPath: NSIndexPath) {
 
     }
+    
+    
+    // MARK: - collection view cell
+    
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -128,19 +139,26 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         showPopUp()
+        
     }
     
     
+    
+ // MARK:d - Pop up view
     
     
     func showPopUp() {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
         EditAndTypeViewController
+        
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
         
+        popOverVC.textContent.text = "1234"
     }
     
 }
+
+

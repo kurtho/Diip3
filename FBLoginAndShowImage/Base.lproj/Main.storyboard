@@ -551,7 +551,7 @@
         <!--Set Question View Controller-->
         <scene sceneID="3MC-8I-2Fr">
             <objects>
-                <viewController id="j7R-v9-cLY" customClass="SetQuestionViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="j7R-v9-cLY" customClass="SetQuestionViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bOh-Pk-xEk"/>
                         <viewControllerLayoutGuide type="bottom" id="h4Q-Tg-3jQ"/>
@@ -797,18 +797,27 @@
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="UZq-gv-k78" id="q9X-3P-ANy"/>
+                                                </connections>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw0-DH-GmL">
                                                 <rect key="frame" x="159" y="212" width="141" height="30"/>
                                                 <state key="normal" title="Send">
                                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sendButton:" destination="UZq-gv-k78" eventType="touchUpInside" id="n6C-F4-YcY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shX-Ql-5Hh">
                                                 <rect key="frame" x="10" y="212" width="141" height="30"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="UZq-gv-k78" eventType="touchUpInside" id="1ru-Hm-Zrf"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-NF-mrV">
                                                 <rect key="frame" x="8" y="20" width="24.5" height="24"/>
@@ -865,8 +874,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="myTextView" destination="k99-Od-MHD" id="BWh-yR-KC8"/>
+                        <outlet property="myTextView" destination="10g-2K-KsE" id="znq-VE-ch2"/>
                         <outlet property="myView" destination="k99-Od-MHD" id="VKM-ua-cfi"/>
+                        <outlet property="textContent" destination="Pnl-EY-RGU" id="2qW-e5-fDX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlY-u7-uDH" userLabel="First Responder" sceneMemberID="firstResponder"/>

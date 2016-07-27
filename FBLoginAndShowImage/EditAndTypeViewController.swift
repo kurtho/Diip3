@@ -8,26 +8,36 @@
 
 import UIKit
 
-class EditAndTypeViewController: UIViewController {
+class EditAndTypeViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var myView: UIView!
-    @IBOutlet weak var myTextView: UIView!
+    @IBOutlet weak var myTextView: UITextView!
     
+    @IBOutlet weak var textContent: UILabel!
+    
+    
+    @IBAction func cancelButton(sender: AnyObject) {
+        removeAnimate()
+    }
+    
+    @IBAction func sendButton(sender: AnyObject) {
+    }
     
     @IBAction func invisibleButton(sender: AnyObject) {
         removeAnimate()
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
 
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         showAnimation()
         myTextView.becomeFirstResponder()
         hideKeyboardWhenTappedAround()
         
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
         //        self.navigationController?.navigationBarHidden = true
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Do any additional setup after loading the view.
     }
 
@@ -50,6 +60,8 @@ class EditAndTypeViewController: UIViewController {
     
     
     func showAnimation() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
         self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
         self.view.alpha = 0.0
         UIView.animateWithDuration(0.25, animations: {
@@ -62,16 +74,24 @@ class EditAndTypeViewController: UIViewController {
     {
         UIView.animateWithDuration(0.25, animations: {
             self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
-            self.view.alpha = 0.0;
+            self.view.alpha = 0.0
             }, completion:{(finished : Bool)  in
                 if (finished)
                 {
                     self.view.removeFromSuperview()
                 }
         });
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
 
+    
+
+    
+    
+    
 }
+
 
 
 
