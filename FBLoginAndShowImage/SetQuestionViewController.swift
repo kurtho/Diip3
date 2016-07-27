@@ -109,11 +109,12 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 2
+        return collectLabel.count + 1
+        // 1 is default for clint to add something
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectPic.count
+        return collectPic.count 
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -121,6 +122,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         cell.backgroundColor = UIColor.whiteColor()
         cell.clipsToBounds = true
         cell.layer.cornerRadius = cell.frame.size.width/16
+        
         cell.label.text = collectLabel[indexPath.row]
         cell.image.image = UIImage(named: collectPic[indexPath.row])
         return cell

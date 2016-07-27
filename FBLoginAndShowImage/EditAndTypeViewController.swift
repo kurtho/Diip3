@@ -20,6 +20,7 @@ class EditAndTypeViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func sendButton(sender: AnyObject) {
+        
     }
     
     @IBAction func invisibleButton(sender: AnyObject) {
