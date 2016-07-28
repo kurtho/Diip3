@@ -222,7 +222,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-AS-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984" y="1376"/>
+            <point key="canvasLocation" x="999.5" y="1032.5"/>
+        </scene>
+        <!--Mission-->
+        <scene sceneID="V3g-Il-CH1">
+            <objects>
+                <viewController id="Kys-1E-XjZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xLe-Hq-PIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZwW-Ci-7mr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mra-cE-lYU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mission" image="Price Tag-40" id="Bd6-t5-XB9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXc-KK-RpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999.5" y="1778.5"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="r4L-eg-uu1">
@@ -294,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7md-Or-djr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059" y="285"/>
+            <point key="canvasLocation" x="999.5" y="284.5"/>
         </scene>
         <!--Members Table View Controller-->
         <scene sceneID="pba-Ra-u4e">
@@ -404,6 +424,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="s4J-ok-1q3" kind="relationship" relationship="viewControllers" id="6DU-vU-kjG"/>
+                        <segue destination="Kys-1E-XjZ" kind="relationship" relationship="viewControllers" id="y0a-b6-JZd"/>
                         <segue destination="Wyi-ej-fiz" kind="relationship" relationship="viewControllers" id="2gZ-hZ-DDb"/>
                         <segue destination="Y3W-2Z-lYO" kind="relationship" relationship="viewControllers" id="vau-d9-exN"/>
                     </connections>
@@ -1879,6 +1900,7 @@
         <image name="Forward-48" width="48" height="48"/>
         <image name="Forward-64" width="64" height="64"/>
         <image name="Hearts-52 (2)" width="52" height="52"/>
+        <image name="Price Tag-40" width="40" height="40"/>
         <image name="Search Filled" width="30" height="30"/>
         <image name="Settings" width="30" height="30"/>
         <image name="Speech Bubble-52 (2)" width="52" height="52"/>

@@ -45,6 +45,9 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         
         self.navigationController!.navigationBar.hidden = false
 
+        // tab bar 
+
+        
 
         
     }

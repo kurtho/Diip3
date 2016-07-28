@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// user's profile data singleTon
 class ProfileData: NSObject {
     var name: String?
     var gender: String?
@@ -33,7 +33,6 @@ class ProfileData: NSObject {
     
 }
 
-
 class CurrentUser {
     static let shareInstance = CurrentUser()
 //    已先實體化
@@ -41,16 +40,11 @@ class CurrentUser {
     
 }
 
-
 class profileList {
     static let shareInstance = profileList()
     var basicInfo = [ProfileData]()
-    
-    
+
 }
-
-
-
 
 class LoginFile {
     var name: String = ""
@@ -69,6 +63,24 @@ class LoginFile {
 }
 
 
+
+class UserBasic {
+    var answer = [""]
+    init (answer: [String]) {
+        self.answer = answer
+    }
+}
+
+class CurrentUserBasic {
+    static let shareInstance = CurrentUserBasic()
+    var basicQuestion: UserBasic?
+}
+
+
+
+
+
+// test only
 class PetClass {
     var name: String = ""
     var address: String = ""

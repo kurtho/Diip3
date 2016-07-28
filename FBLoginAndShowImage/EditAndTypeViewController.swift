@@ -9,6 +9,12 @@
 import UIKit
 
 class EditAndTypeViewController: UIViewController, UITextViewDelegate {
+    var basicQuestion: UserBasic?
+    
+    
+    
+
+    
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var myTextView: UITextView!
     
@@ -20,7 +26,9 @@ class EditAndTypeViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func sendButton(sender: AnyObject) {
-        
+        CurrentUserBasic.shareInstance.basicQuestion?.answer.append(myTextView.text)
+        removeAnimate()
+        print("text view ~~~\(CurrentUserBasic.shareInstance.basicQuestion?.answer)")
     }
     
     @IBAction func invisibleButton(sender: AnyObject) {
