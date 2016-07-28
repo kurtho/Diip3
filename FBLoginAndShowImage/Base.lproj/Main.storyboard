@@ -247,7 +247,7 @@
         <!--SearchViewController-->
         <scene sceneID="r4L-eg-uu1">
             <objects>
-                <viewController title="SearchViewController" id="Wyi-ej-fiz" customClass="SearchViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SearchViewController" id="Wyi-ej-fiz" customClass="SearchQAViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xv8-BH-4uy"/>
                         <viewControllerLayoutGuide type="bottom" id="RwG-Mc-f7G"/>
@@ -256,6 +256,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-Gh-yTH">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-IZ-6y9">
+                                <rect key="frame" x="9" y="71" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.41176470588235292" green="0.72941176470588232" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="QA配對">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okB-bQ-XLX">
+                                <rect key="frame" x="93" y="71" width="83" height="30"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="興趣契合">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-ao-0PB">
+                                <rect key="frame" x="184" y="71" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="本日人氣QA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot9-Lv-hhq">
+                                <rect key="frame" x="291" y="71" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="最新的QA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-zI-esS">
                                 <rect key="frame" x="0.0" y="109" width="375" height="509"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -310,38 +342,6 @@
                                     <outlet property="delegate" destination="Wyi-ej-fiz" id="8oy-0Q-cd2"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-Gh-yTH">
-                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-IZ-6y9">
-                                <rect key="frame" x="9" y="71" width="76" height="30"/>
-                                <color key="backgroundColor" red="0.41176470588235292" green="0.72941176470588232" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="QA配對">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okB-bQ-XLX">
-                                <rect key="frame" x="93" y="71" width="83" height="30"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="興趣契合">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot9-Lv-hhq">
-                                <rect key="frame" x="291" y="71" width="73" height="30"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="最新的QA">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-ao-0PB">
-                                <rect key="frame" x="184" y="71" width="99" height="30"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="本日人氣QA">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -366,7 +366,7 @@
                     <tabBarItem key="tabBarItem" title="Mission" image="Search Filled" id="JYx-ki-Op2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="collectionView" destination="4EA-zI-esS" id="gxk-0i-OgW"/>
+                        <outlet property="collectionView" destination="4EA-zI-esS" id="nqn-C4-G51"/>
                         <outlet property="collectionViewLayout" destination="iek-fg-n13" id="n1A-hi-wH6"/>
                     </connections>
                 </viewController>

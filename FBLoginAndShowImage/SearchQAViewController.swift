@@ -8,28 +8,57 @@
 
 import UIKit
 
-class SearchQAViewController: UIViewController {
-
+class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    var select4Button = 0
+    let caseZero = ["moon", "sky"]
+    let caseOne = ["sky", "moon", "backGround", "backGround1"]
+    let caseTwo = ["1", "2", "3", "4"]
+    let caseThree = []
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        switch select4Button {
+        case 0:
+            select4Button = caseZero.count
+            break
+        case 1:
+            select4Button = caseOne.count
+            break
+        case 2:
+            select4Button = caseTwo.count
+            break
+        case 3:
+            select4Button = caseThree.count
+            break
+        default:
+            break
+        }
+        return select4Button
     }
-    */
+
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
 
 }
