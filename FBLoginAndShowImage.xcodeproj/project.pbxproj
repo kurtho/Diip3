@@ -22,6 +22,7 @@
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
 		294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EC1D3A348300F36F65 /* EditRelationViewController.swift */; };
+		295EAA2F1D49F8130014A9BC /* SearchQACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295EAA2E1D49F8130014A9BC /* SearchQACollectionViewCell.swift */; };
 		298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298470B21D2A9D4B00913250 /* ProfileImage.swift */; };
 		298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF631D23BB8C00F03F4E /* AppDelegate.swift */; };
 		298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF651D23BB8C00F03F4E /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
 		294E35EC1D3A348300F36F65 /* EditRelationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRelationViewController.swift; sourceTree = "<group>"; };
+		295EAA2E1D49F8130014A9BC /* SearchQACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQACollectionViewCell.swift; sourceTree = "<group>"; };
 		298470B21D2A9D4B00913250 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		298FBF601D23BB8C00F03F4E /* FBLoginAndShowImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLoginAndShowImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298FBF631D23BB8C00F03F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,8 +97,7 @@
 		292843D21D3F561E001681CD /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				292843D01D3F49CA001681CD /* MembersTableViewCell.swift */,
-				29F63A5D1D32A0D300178065 /* SearchCollectionViewCell.swift */,
+				295EAA2E1D49F8130014A9BC /* SearchQACollectionViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -152,6 +153,8 @@
 			children = (
 				292843D31D3F5658001681CD /* MemberInfoTableViewController.swift */,
 				292843CE1D3F35F3001681CD /* MembersTableViewController.swift */,
+				292843D01D3F49CA001681CD /* MembersTableViewCell.swift */,
+				29F63A5D1D32A0D300178065 /* SearchCollectionViewCell.swift */,
 				29F63A5F1D32A3EC00178065 /* SearchViewController.swift */,
 			);
 			name = Old;
@@ -177,6 +180,7 @@
 		298FBF571D23BB8C00F03F4E = {
 			isa = PBXGroup;
 			children = (
+				298FBF671D23BB8C00F03F4E /* Main.storyboard */,
 				298FBF621D23BB8C00F03F4E /* FBLoginAndShowImage */,
 				298FBF611D23BB8C00F03F4E /* Products */,
 				EE3F2BCD0E1FF29EC8BDAD63 /* Pods */,
@@ -195,7 +199,6 @@
 		298FBF621D23BB8C00F03F4E /* FBLoginAndShowImage */ = {
 			isa = PBXGroup;
 			children = (
-				298FBF671D23BB8C00F03F4E /* Main.storyboard */,
 				298FBF631D23BB8C00F03F4E /* AppDelegate.swift */,
 				298FBF651D23BB8C00F03F4E /* ViewController.swift */,
 				292843F31D3F8796001681CD /* SignUpChooseImageViewController.swift */,
@@ -404,6 +407,7 @@
 				298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */,
 				298FBF821D24250500F03F4E /* HomeViewController.swift in Sources */,
 				2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */,
+				295EAA2F1D49F8130014A9BC /* SearchQACollectionViewCell.swift in Sources */,
 				292843D41D3F5658001681CD /* MemberInfoTableViewController.swift in Sources */,
 				299F1A3A1D2CF506008555EF /* ProfileHeadCollectionViewCell.swift in Sources */,
 				2937A68B1D49D580007F83D6 /* SearchQAViewController.swift in Sources */,
@@ -420,6 +424,7 @@
 				298FBF681D23BB8C00F03F4E /* Base */,
 			);
 			name = Main.storyboard;
+			path = FBLoginAndShowImage;
 			sourceTree = "<group>";
 		};
 		298FBF6C1D23BB8C00F03F4E /* LaunchScreen.storyboard */ = {

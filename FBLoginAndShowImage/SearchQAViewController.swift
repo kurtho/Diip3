@@ -15,8 +15,22 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     let caseTwo = ["1", "2", "3", "4"]
     let caseThree = []
     
-    
     @IBOutlet weak var collectionView: UICollectionView!
+
+    
+    @IBAction func buttonOne(sender: AnyObject) {
+        select4Button = 0
+    }
+    @IBAction func buttonTwo(sender: AnyObject) {
+        select4Button = 1
+    }
+    @IBAction func buttonThree(sender: AnyObject) {
+        select4Button = 2
+    }
+    @IBAction func buttonFour(sender: AnyObject) {
+        select4Button = 3
+    }
+    
     
     
     override func viewDidLoad() {
@@ -30,34 +44,37 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        switch select4Button {
-        case 0:
-            select4Button = caseZero.count
-            break
-        case 1:
-            select4Button = caseOne.count
-            break
-        case 2:
-            select4Button = caseTwo.count
-            break
-        case 3:
-            select4Button = caseThree.count
-            break
-        default:
-            break
-        }
-        return select4Button
+//        var returnValue = 0
+//        switch select4Button {
+//        case 0:
+//            returnValue = caseZero.count
+//            print("return value~~~ \(returnValue)")
+//            break
+//        case 1:
+//            returnValue = caseOne.count
+//            
+//            break
+//        case 2:
+//            returnValue = caseTwo.count
+//            break
+//        case 3:
+//            returnValue = caseThree.count
+//            break
+//        default:
+//            break
+//        }
+//        return returnValue
+            return caseTwo.count
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
 
-        return 1
+            return 1
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath)
-        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath) as! SearchQACollectionViewCell
+        cell.cellImage.image = UIImage(named: caseTwo[indexPath.row])
         
         return cell
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     
     @IBOutlet weak var mySegment: UISegmentedControl!
@@ -27,9 +27,9 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
    
 
     
-    let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處", "喜歡什麼樣的特質"]
+    let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
     let collectPic = ["add"]
-    let collectLabel = ["add a Question", ]
+    let collectLabel = ["add a Question"]
     
     var segmentNum = 0
     
@@ -45,9 +45,9 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.backgroundColor = UIColor.lightGrayColor()
         
         collectionView.hidden = true
-        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let width = (UIScreen.mainScreen().bounds.width - 2*5)/2
-        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
+//        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        let width = (UIScreen.mainScreen().bounds.width - 2*5)/2
+//        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
 //        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
 
         // Do any additional setup after loading the view.
@@ -106,15 +106,22 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     // MARK: - collection view cell
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let size = (self.collectionView!.frame.size.width) / 2 - 10
+//        return CGSize(width: 100, height: 100)
+        return CGSize(width: size, height: size)
+    }
     
+
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return collectPic.count
         // 1 is default for clint to add something
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectPic.count
+//        return collectPic.count
+        return collectLabel.count + 2
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -123,8 +130,8 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         cell.clipsToBounds = true
         cell.layer.cornerRadius = cell.frame.size.width/16
         
-        cell.label.text = collectLabel[indexPath.row]
-        cell.image.image = UIImage(named: collectPic[indexPath.row])
+//        cell.label.text = collectLabel[indexPath.row]
+//        cell.image.image = UIImage(named: collectPic[indexPath.row])
         return cell
     }
 
