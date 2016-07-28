@@ -12,7 +12,7 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     var select4Button = 0
     let caseZero = ["moon", "sky"]
     let caseOne = ["sky", "moon", "backGround", "backGround1"]
-    let caseTwo = ["1", "2", "3", "4"]
+    let caseTwo = ["1", "2", "3", "4", "sky"]
     let caseThree = []
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -20,15 +20,19 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBAction func buttonOne(sender: AnyObject) {
         select4Button = 0
+        collectionView.reloadData()
     }
     @IBAction func buttonTwo(sender: AnyObject) {
         select4Button = 1
+        collectionView.reloadData()
     }
     @IBAction func buttonThree(sender: AnyObject) {
         select4Button = 2
+        collectionView.reloadData()
     }
     @IBAction func buttonFour(sender: AnyObject) {
         select4Button = 3
+        collectionView.reloadData()
     }
     
     
@@ -44,27 +48,27 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        var returnValue = 0
-//        switch select4Button {
-//        case 0:
-//            returnValue = caseZero.count
-//            print("return value~~~ \(returnValue)")
-//            break
-//        case 1:
-//            returnValue = caseOne.count
-//            
-//            break
-//        case 2:
-//            returnValue = caseTwo.count
-//            break
-//        case 3:
-//            returnValue = caseThree.count
-//            break
-//        default:
-//            break
-//        }
-//        return returnValue
-            return caseTwo.count
+        var returnValue = 0
+        switch select4Button {
+        case 0:
+            returnValue = caseZero.count
+            print("return value~~~ \(returnValue)")
+            break
+        case 1:
+            returnValue = caseOne.count
+            
+            break
+        case 2:
+            returnValue = caseTwo.count
+            break
+        case 3:
+            returnValue = caseThree.count
+            break
+        default:
+            break
+        }
+        return returnValue
+//            return caseTwo.count
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
