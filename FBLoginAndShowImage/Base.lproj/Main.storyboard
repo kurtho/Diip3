@@ -217,7 +217,7 @@
                             <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerY" secondItem="6Ya-oN-Bva" secondAttribute="centerY" id="VZP-6g-cG7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mission" image="Settings" id="zkR-ax-z0T"/>
+                    <tabBarItem key="tabBarItem" title="Mission" image="cardiogram (2)" id="zkR-ax-z0T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-AS-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,10 +423,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="s4J-ok-1q3" kind="relationship" relationship="viewControllers" id="6DU-vU-kjG"/>
-                        <segue destination="Kys-1E-XjZ" kind="relationship" relationship="viewControllers" id="y0a-b6-JZd"/>
                         <segue destination="Wyi-ej-fiz" kind="relationship" relationship="viewControllers" id="2gZ-hZ-DDb"/>
                         <segue destination="Y3W-2Z-lYO" kind="relationship" relationship="viewControllers" id="vau-d9-exN"/>
+                        <segue destination="Kys-1E-XjZ" kind="relationship" relationship="viewControllers" id="y0a-b6-JZd"/>
+                        <segue destination="s4J-ok-1q3" kind="relationship" relationship="viewControllers" id="6DU-vU-kjG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cN-Qx-O2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1902,9 +1902,9 @@
         <image name="Hearts-52 (2)" width="52" height="52"/>
         <image name="Price Tag-40" width="40" height="40"/>
         <image name="Search Filled" width="30" height="30"/>
-        <image name="Settings" width="30" height="30"/>
         <image name="Speech Bubble-52 (2)" width="52" height="52"/>
         <image name="backGround" width="4000" height="3000"/>
         <image name="backGround1" width="4000" height="3000"/>
+        <image name="cardiogram (2)" width="24" height="24"/>
     </resources>
 </document>

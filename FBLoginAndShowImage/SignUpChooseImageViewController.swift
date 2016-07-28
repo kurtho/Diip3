@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITabBarDelegate {
     var choose = 0
     var any: AnyObject?
     
@@ -46,6 +46,17 @@ class SignUpChooseImageViewController: UIViewController, UICollectionViewDataSou
         self.navigationController!.navigationBar.hidden = false
 
         // tab bar 
+
+        tabBarController?.tabBar.items?[2].badgeValue = "1"   // this will add "1" badge to your fifth tab bar item
+        
+        // or like this to apply it to your first tab
+//        tabBarController?.tabBar.items?.first?.badgeValue = "1st"
+//        
+//        // or to apply to your second tab
+//        tabBarController?.tabBar.items?[1].badgeValue = "2nd"
+//        
+//        // to apply it to your last tab
+//        tabBarController?.tabBar.items?.last?.badgeValue = "Last"
 
         
 
