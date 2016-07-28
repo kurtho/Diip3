@@ -27,9 +27,9 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
    
 
     
-    let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
+    let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處", "喜歡什麼樣的特質"]
     let collectPic = ["add"]
-    let collectLabel = ["add a Question"]
+    let collectLabel = ["add a Question", ]
     
     var segmentNum = 0
     
@@ -109,12 +109,12 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return collectLabel.count + 1
+        return 1
         // 1 is default for clint to add something
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectPic.count 
+        return collectPic.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

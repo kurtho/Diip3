@@ -52,11 +52,14 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
 
-        
+        return 1
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath)
+        
+        
+        return cell
     }
     
     
