@@ -17,6 +17,7 @@
 		2937A6621D45FA33007F83D6 /* QAndACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */; };
 		2937A6651D476F3F007F83D6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6641D476F3F007F83D6 /* SettingViewController.swift */; };
 		2937A6671D47A8C6007F83D6 /* EditAndTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A6661D47A8C6007F83D6 /* EditAndTypeViewController.swift */; };
+		2937A68B1D49D580007F83D6 /* SearchQAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937A68A1D49D580007F83D6 /* SearchQAViewController.swift */; };
 		294E35A31D37CC8000F36F65 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35A21D37CC8000F36F65 /* PopUpViewController.swift */; };
 		294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */; };
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
@@ -50,6 +51,7 @@
 		2937A6611D45FA33007F83D6 /* QAndACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAndACollectionViewCell.swift; sourceTree = "<group>"; };
 		2937A6641D476F3F007F83D6 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2937A6661D47A8C6007F83D6 /* EditAndTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAndTypeViewController.swift; sourceTree = "<group>"; };
+		2937A68A1D49D580007F83D6 /* SearchQAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQAViewController.swift; sourceTree = "<group>"; };
 		294E35A21D37CC8000F36F65 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		294E35E81D3A22DC00F36F65 /* EditGenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditGenderViewController.swift; sourceTree = "<group>"; };
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,16 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
+		2937A6891D49D512007F83D6 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				292843D31D3F5658001681CD /* MemberInfoTableViewController.swift */,
+				292843CE1D3F35F3001681CD /* MembersTableViewController.swift */,
+				29F63A5F1D32A3EC00178065 /* SearchViewController.swift */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
 		294E35E71D3A226000F36F65 /* ProfileEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,10 +224,9 @@
 		29F63A5B1D329CA000178065 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				292843CE1D3F35F3001681CD /* MembersTableViewController.swift */,
-				292843D31D3F5658001681CD /* MemberInfoTableViewController.swift */,
-				29F63A5F1D32A3EC00178065 /* SearchViewController.swift */,
+				2937A68A1D49D580007F83D6 /* SearchQAViewController.swift */,
 				292843D21D3F561E001681CD /* cell */,
+				2937A6891D49D512007F83D6 /* Old */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -395,6 +406,7 @@
 				2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */,
 				292843D41D3F5658001681CD /* MemberInfoTableViewController.swift in Sources */,
 				299F1A3A1D2CF506008555EF /* ProfileHeadCollectionViewCell.swift in Sources */,
+				2937A68B1D49D580007F83D6 /* SearchQAViewController.swift in Sources */,
 				29F63A371D30F69C00178065 /* ProfileData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
