@@ -83,6 +83,29 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath) as! SearchQACollectionViewCell
         cell.cellImage.image = UIImage(named: caseTwo[indexPath.row])
         
+        
+        
+        let bgColorView = UIView()
+        bgColorView.frame = CGRectMake(5, 5, (collectionView.frame.width)-10, (cell.frame.height)-10)
+        bgColorView.backgroundColor = UIColor.clearColor();
+        cell.selectedBackgroundView = bgColorView
+        
+        let myBackView=UIView(frame:cell.frame)
+        myBackView.frame = CGRectMake(5, 5, (collectionView.frame.width)-10, (cell.frame.height)-10)
+        myBackView.backgroundColor = UIColor.whiteColor();
+        myBackView.layer.masksToBounds = false
+        myBackView.clipsToBounds = false
+        myBackView.layer.cornerRadius = 3
+        myBackView.layer.shadowOffset = CGSizeMake(-1, 1)
+        myBackView.layer.shadowRadius = 2
+        myBackView.layer.shadowOpacity = 0.4;
+        let test:CGRect = myBackView.layer.bounds
+        myBackView.layer.shadowPath = UIBezierPath(rect: test).CGPath
+        cell.addSubview(myBackView)
+        cell.sendSubviewToBack(myBackView)
+        
+        
+        
         return cell
     }
     
