@@ -39,7 +39,10 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tabBarController?.tabBar.items?[2].badgeValue = "1"
+        //        tabBarController?.tabBar.items?.first?.badgeValue = "1st"
+        //        tabBarController?.tabBar.items?[1].badgeValue = "2nd"
+        //        tabBarController?.tabBar.items?.last?.badgeValue = "Last"
     }
 
     override func didReceiveMemoryWarning() {

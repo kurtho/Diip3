@@ -23,6 +23,7 @@
 		294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */; };
 		294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294E35EC1D3A348300F36F65 /* EditRelationViewController.swift */; };
 		295EAA2F1D49F8130014A9BC /* SearchQACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295EAA2E1D49F8130014A9BC /* SearchQACollectionViewCell.swift */; };
+		295EAA321D4A17B50014A9BC /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295EAA311D4A17B50014A9BC /* MissionViewController.swift */; };
 		298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298470B21D2A9D4B00913250 /* ProfileImage.swift */; };
 		298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF631D23BB8C00F03F4E /* AppDelegate.swift */; };
 		298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298FBF651D23BB8C00F03F4E /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		294E35EA1D3A2E5800F36F65 /* EditPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlaceViewController.swift; sourceTree = "<group>"; };
 		294E35EC1D3A348300F36F65 /* EditRelationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRelationViewController.swift; sourceTree = "<group>"; };
 		295EAA2E1D49F8130014A9BC /* SearchQACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQACollectionViewCell.swift; sourceTree = "<group>"; };
+		295EAA311D4A17B50014A9BC /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 		298470B21D2A9D4B00913250 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		298FBF601D23BB8C00F03F4E /* FBLoginAndShowImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLoginAndShowImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298FBF631D23BB8C00F03F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,14 @@
 			name = ProfileEdit;
 			sourceTree = "<group>";
 		};
+		295EAA301D4A177C0014A9BC /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				295EAA311D4A17B50014A9BC /* MissionViewController.swift */,
+			);
+			name = Mission;
+			sourceTree = "<group>";
+		};
 		298470B11D2A9D1500913250 /* LocalFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 				29F63A381D31091C00178065 /* HomeProfile */,
 				29F63A5B1D329CA000178065 /* Search */,
 				2937A6631D476EFE007F83D6 /* Setting */,
+				295EAA301D4A177C0014A9BC /* Mission */,
 				298470B11D2A9D1500913250 /* LocalFile */,
 				29F63A5C1D329CBB00178065 /* Others */,
 			);
@@ -410,6 +421,7 @@
 				295EAA2F1D49F8130014A9BC /* SearchQACollectionViewCell.swift in Sources */,
 				292843D41D3F5658001681CD /* MemberInfoTableViewController.swift in Sources */,
 				299F1A3A1D2CF506008555EF /* ProfileHeadCollectionViewCell.swift in Sources */,
+				295EAA321D4A17B50014A9BC /* MissionViewController.swift in Sources */,
 				2937A68B1D49D580007F83D6 /* SearchQAViewController.swift in Sources */,
 				29F63A371D30F69C00178065 /* ProfileData.swift in Sources */,
 			);
