@@ -204,15 +204,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-UR-hQj">
-                                <rect key="frame" x="164" y="319" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="153" y="319" width="69" height="30"/>
+                                <state key="normal" title="FBLogOut"/>
                                 <connections>
                                     <action selector="logOutFB:" destination="Y3W-2Z-lYO" eventType="touchUpInside" id="1Tp-E9-hE2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iz-oi-ZMT">
+                                <rect key="frame" x="150" y="350" width="75" height="30"/>
+                                <state key="normal" title="addTabBar"/>
+                                <connections>
+                                    <action selector="addTabBar:" destination="Y3W-2Z-lYO" eventType="touchUpInside" id="r22-fk-vbe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9iz-oi-ZMT" firstAttribute="centerX" secondItem="ciJ-UR-hQj" secondAttribute="centerX" id="A3O-h0-9g7"/>
+                            <constraint firstItem="9iz-oi-ZMT" firstAttribute="top" secondItem="ciJ-UR-hQj" secondAttribute="bottom" constant="1" id="KHI-wf-56r"/>
                             <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerX" secondItem="6Ya-oN-Bva" secondAttribute="centerX" id="PES-oZ-3dI"/>
                             <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerY" secondItem="6Ya-oN-Bva" secondAttribute="centerY" id="VZP-6g-cG7"/>
                         </constraints>

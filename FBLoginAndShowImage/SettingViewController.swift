@@ -21,6 +21,13 @@ class SettingViewController: UIViewController {
         self.presentViewController(viewController, animated: true, completion: nil)
     }
 
+    @IBAction func addTabBar(sender: AnyObject) {
+        tabBarController?.tabBar.items?[2].badgeValue = "1"
+
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -24,20 +24,24 @@ class MissionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if tabBarController?.tabBar.items?[2].badgeValue != nil {
-        showPopUp()
-        }
-        
-        
+    
         
         missionImage.clipsToBounds = true
         missionImage.layer.cornerRadius = missionImage.frame.size.width / 2
-        tabBarController?.tabBar.items?[2].badgeValue = nil
         
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        if tabBarController?.tabBar.items?[2].badgeValue != nil {
+            showPopUp()
+        }
+        tabBarController?.tabBar.items?[2].badgeValue = nil
+
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
