@@ -32,9 +32,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
 
     
     @IBAction func LoginActionButton(sender: AnyObject) {
-        login()
+        if accountLoginButton.titleLabel?.text != "Sign Up"{
+            login()
+            print("it is login function")
+        }else {
+            createAccount()
+            print("it is create account function")
+        }
+        
     }
 
+    @IBAction func testCreateAccount(sender: AnyObject) {
+        createAccount()
+    }
     
     
     @IBAction func createAccountButton(sender: AnyObject) {
@@ -126,9 +136,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
         })
         
     }
-    @IBAction func testCreateAccount(sender: AnyObject) {
-        createAccount()
-    }
+
     
     func createAccount() {
         FIRAuth.auth()?.createUserWithEmail(accountField.text!, password: passwordField.text!, completion: {
