@@ -120,7 +120,6 @@ extension UIViewController {
     showAnimation()
     showPopUp()
     }
-    tabBarController?.tabBar.items?[2].badgeValue = nil
     }
 }
 

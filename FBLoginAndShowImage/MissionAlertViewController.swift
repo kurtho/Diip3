@@ -24,6 +24,11 @@ class MissionAlertViewController: UIViewController {
         let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("Mission")
         self.presentViewController(vc, animated: true, completion: nil)
+        
+ // paste it
+        
+
+        
     }
 
     override func viewDidLoad() {

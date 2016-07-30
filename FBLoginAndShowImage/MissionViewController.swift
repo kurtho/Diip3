@@ -25,7 +25,8 @@ class MissionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+        tabBarController?.tabBar.items?[2].badgeValue = nil
+
         missionImage.clipsToBounds = true
         missionImage.layer.cornerRadius = missionImage.frame.size.width / 2
         
@@ -34,6 +35,8 @@ class MissionViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         showAlert()
+        
+        
 
     }
     
