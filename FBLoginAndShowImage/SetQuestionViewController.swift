@@ -52,7 +52,12 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        showAlert()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

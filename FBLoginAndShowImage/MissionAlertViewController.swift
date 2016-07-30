@@ -21,6 +21,9 @@ class MissionAlertViewController: UIViewController {
     
     @IBAction func okButton(sender: AnyObject) {
         removeAnimate()
+        let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("Mission")
+        self.presentViewController(vc, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {

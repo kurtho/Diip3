@@ -57,6 +57,10 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
         
     }
 
+    override func viewWillAppear(animated: Bool) {
+        showAlert()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
