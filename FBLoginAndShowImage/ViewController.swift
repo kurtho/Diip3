@@ -36,14 +36,29 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
             login()
             print("it is login function")
         }else {
-            createAccount()
+            
+            if passwordField.text?.characters.count < 8 {
+                let alertButton = UIAlertController(title: "密碼至少要八位數", message: nil, preferredStyle: .Alert)
+                let okAction = UIAlertAction(title: "知道了", style: .Cancel, handler: nil)
+                alertButton.addAction(okAction)
+                self.presentViewController(alertButton, animated: true, completion: nil)
+            }else {
+                createAccount()
+            }
+            
+            
+            
             print("it is create account function")
         }
         
     }
 
     @IBAction func testCreateAccount(sender: AnyObject) {
-        createAccount()
+        
+        
+        passwordShallNotUnder8()
+        
+        
     }
     
     
@@ -233,6 +248,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
 //    }
     //輸入帳密的地方沒有彈起
     
+    func passwordShallNotUnder8() {
+//        passwordField.text?.completePathIntoString(caseSensitive: <#T##Bool#>) < 6
+        print("!@#$%^&*()_~~~\(passwordField.text?.characters.count)")
+    }
 }
 
 extension UIViewController {
