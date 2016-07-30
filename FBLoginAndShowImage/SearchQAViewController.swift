@@ -11,9 +11,12 @@ import UIKit
 class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var select4Button = 0
     let caseZero = ["moon", "sky"]
+    
     let caseOne = ["sky", "moon", "backGround", "backGround1"]
+    
     let caseTwo = ["1", "2", "3", "4", "sky"]
-    let caseThree = []
+    
+    let caseThree = ["backGround"]
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -96,7 +99,7 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
             
             break
         case 3:
-            cell.cellImage.image = UIImage(named: caseThree[indexPath.row] as! String)
+            cell.cellImage.image = UIImage(named: caseThree[indexPath.row])
             
             break
         default:

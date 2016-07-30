@@ -967,7 +967,6 @@
                                             <constraint firstItem="Pnl-EY-RGU" firstAttribute="leading" secondItem="k99-Od-MHD" secondAttribute="leading" constant="8" id="fan-mb-GZF"/>
                                             <constraint firstItem="Pnl-EY-RGU" firstAttribute="top" secondItem="bs4-NF-mrV" secondAttribute="bottom" constant="17" id="nlQ-5N-pet"/>
                                             <constraint firstItem="bw0-DH-GmL" firstAttribute="top" secondItem="10g-2K-KsE" secondAttribute="bottom" constant="2" id="pfA-7Q-zCK"/>
-                                            <constraint firstItem="bw0-DH-GmL" firstAttribute="leading" secondItem="shX-Ql-5Hh" secondAttribute="trailing" constant="8" id="tmj-A0-Ygk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2149,6 +2148,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajZ-Rv-VlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820.5" y="270.5"/>
+        </scene>
+        <!--Mission Alert View Controller-->
+        <scene sceneID="Kto-Ku-ouY">
+            <objects>
+                <viewController storyboardIdentifier="misionAlert" id="jz4-Qv-QxJ" customClass="MissionAlertViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmT-sm-fmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyQ-B6-WlB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k0H-MH-ZHB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-as-mYB">
+                                <rect key="frame" x="21" y="203" width="332" height="290"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="任務通知" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blh-o6-YIw">
+                                        <rect key="frame" x="122" y="33" width="80" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDp-UD-Uzv">
+                                        <rect key="frame" x="0.0" y="250" width="166" height="40"/>
+                                        <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NcA-UP-0sU"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="jz4-Qv-QxJ" eventType="touchUpInside" id="4aG-fr-0yz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AngelaHe可以開始與您執行任務囉，立即開始更進階的任務吧" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqH-LF-2CS">
+                                        <rect key="frame" x="20" y="81" width="284" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-Cy-0qJ">
+                                        <rect key="frame" x="166" y="250" width="166" height="40"/>
+                                        <color key="backgroundColor" red="0.41176470590000003" green="0.72941176470000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EOD-mI-ibX"/>
+                                        </constraints>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okButton:" destination="jz4-Qv-QxJ" eventType="touchUpInside" id="6PB-B7-91n"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2tQ-Cy-0qJ" secondAttribute="bottom" id="1P9-ar-3xV"/>
+                                    <constraint firstItem="Blh-o6-YIw" firstAttribute="top" secondItem="19Y-as-mYB" secondAttribute="top" constant="33" id="28A-NZ-v9e"/>
+                                    <constraint firstItem="FqH-LF-2CS" firstAttribute="centerX" secondItem="19Y-as-mYB" secondAttribute="centerX" id="6F2-Cl-KVB"/>
+                                    <constraint firstItem="Blh-o6-YIw" firstAttribute="centerX" secondItem="19Y-as-mYB" secondAttribute="centerX" id="8wF-vH-EdK"/>
+                                    <constraint firstItem="FqH-LF-2CS" firstAttribute="top" secondItem="Blh-o6-YIw" secondAttribute="bottom" constant="24" id="NpJ-Ls-vBg"/>
+                                    <constraint firstItem="bDp-UD-Uzv" firstAttribute="leading" secondItem="19Y-as-mYB" secondAttribute="leading" id="Oub-tQ-zLh"/>
+                                    <constraint firstItem="FqH-LF-2CS" firstAttribute="leading" secondItem="19Y-as-mYB" secondAttribute="leading" constant="20" id="ht7-rc-FsU"/>
+                                    <constraint firstAttribute="trailing" secondItem="FqH-LF-2CS" secondAttribute="trailing" constant="20" id="jg4-yk-vcM"/>
+                                    <constraint firstItem="bDp-UD-Uzv" firstAttribute="width" secondItem="2tQ-Cy-0qJ" secondAttribute="width" id="lu4-7o-VEH"/>
+                                    <constraint firstItem="2tQ-Cy-0qJ" firstAttribute="leading" secondItem="bDp-UD-Uzv" secondAttribute="trailing" id="ro3-u7-Mgq"/>
+                                    <constraint firstAttribute="trailing" secondItem="2tQ-Cy-0qJ" secondAttribute="trailing" id="vfH-ZS-g0i"/>
+                                    <constraint firstAttribute="bottom" secondItem="bDp-UD-Uzv" secondAttribute="bottom" id="zUZ-LI-Dtk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-BK-4Gp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8GN-BK-4Gp" firstAttribute="leading" secondItem="k0H-MH-ZHB" secondAttribute="leading" id="5ZL-hz-SK2"/>
+                            <constraint firstItem="lyQ-B6-WlB" firstAttribute="top" secondItem="19Y-as-mYB" secondAttribute="bottom" constant="174" id="GaB-Zq-h7y"/>
+                            <constraint firstItem="8GN-BK-4Gp" firstAttribute="top" secondItem="wmT-sm-fmD" secondAttribute="bottom" id="KLX-vA-Trt"/>
+                            <constraint firstItem="19Y-as-mYB" firstAttribute="centerX" secondItem="k0H-MH-ZHB" secondAttribute="centerX" id="QGK-H4-oO7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19Y-as-mYB" secondAttribute="trailing" constant="6" id="Qz7-6A-1Bg"/>
+                            <constraint firstItem="lyQ-B6-WlB" firstAttribute="top" secondItem="8GN-BK-4Gp" secondAttribute="bottom" id="bQG-7v-8IU"/>
+                            <constraint firstAttribute="trailing" secondItem="8GN-BK-4Gp" secondAttribute="trailing" id="bm0-C6-gwE"/>
+                            <constraint firstItem="19Y-as-mYB" firstAttribute="top" secondItem="wmT-sm-fmD" secondAttribute="bottom" constant="183" id="pJf-r2-txa"/>
+                            <constraint firstItem="19Y-as-mYB" firstAttribute="leading" secondItem="k0H-MH-ZHB" secondAttribute="leadingMargin" constant="5" id="sCm-pz-npi"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="FqH-LF-2CS" id="a7z-ZB-csE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czY-ws-pyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5" y="1885.5"/>
         </scene>
     </scenes>
     <resources>
