@@ -132,6 +132,13 @@
                                                         <outlet property="delegate" destination="BYZ-38-t0r" id="xCx-RP-Boa"/>
                                                     </connections>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wva-E9-P3Z">
+                                                    <rect key="frame" x="168" y="70" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="testCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pq-dD-mLT"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="li9-TC-DaT" firstAttribute="centerX" secondItem="OPm-tq-OPN" secondAttribute="centerX" id="3gk-2q-mb7"/>
@@ -148,10 +155,12 @@
                                                 <constraint firstItem="NWz-8r-2gA" firstAttribute="top" secondItem="vBQ-wn-aVr" secondAttribute="top" constant="108" id="Z7u-ZL-ucc"/>
                                                 <constraint firstItem="cdN-86-n5b" firstAttribute="top" secondItem="4r8-hm-rVP" secondAttribute="bottom" constant="8" id="afT-Hu-4kz"/>
                                                 <constraint firstItem="OPm-tq-OPN" firstAttribute="top" secondItem="NWz-8r-2gA" secondAttribute="bottom" constant="16" id="g9O-xD-9Nc"/>
+                                                <constraint firstItem="wva-E9-P3Z" firstAttribute="centerX" secondItem="vBQ-wn-aVr" secondAttribute="centerX" id="iBl-B9-3pP"/>
                                                 <constraint firstAttribute="trailing" secondItem="kSR-op-9gX" secondAttribute="trailing" constant="54" id="lHG-0O-xJM"/>
                                                 <constraint firstItem="NWz-8r-2gA" firstAttribute="centerX" secondItem="OPm-tq-OPN" secondAttribute="centerX" id="lJX-Qs-gKt"/>
                                                 <constraint firstAttribute="bottom" secondItem="Hv4-ql-wXz" secondAttribute="bottom" constant="234" id="nVq-Z3-nqA"/>
                                                 <constraint firstItem="Hv4-ql-wXz" firstAttribute="top" secondItem="vBQ-wn-aVr" secondAttribute="top" constant="234" id="osa-Ms-oNv"/>
+                                                <constraint firstItem="wva-E9-P3Z" firstAttribute="top" secondItem="vBQ-wn-aVr" secondAttribute="top" constant="70" id="uUf-wu-1aP"/>
                                             </constraints>
                                         </scrollView>
                                     </subviews>

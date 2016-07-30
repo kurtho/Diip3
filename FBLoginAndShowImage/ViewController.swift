@@ -124,6 +124,23 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
             }
             
         })
+        
+    }
+    @IBAction func testCreateAccount(sender: AnyObject) {
+        createAccount()
+    }
+    
+    func createAccount() {
+        FIRAuth.auth()?.createUserWithEmail(accountField.text!, password: passwordField.text!, completion: {
+            user, error in
+            if error != nil {
+                
+                //                password or email is incorrect
+                print("create incorrect")
+            } else {
+                print("user create success")
+            }
+        })
     }
     
     
