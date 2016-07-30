@@ -2177,7 +2177,7 @@
                                             <constraint firstAttribute="height" constant="40" id="NcA-UP-0sU"/>
                                         </constraints>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="cancelButton:" destination="jz4-Qv-QxJ" eventType="touchUpInside" id="4aG-fr-0yz"/>
@@ -2196,7 +2196,7 @@
                                             <constraint firstAttribute="height" constant="40" id="EOD-mI-ibX"/>
                                         </constraints>
                                         <state key="normal" title="Ok">
-                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="okButton:" destination="jz4-Qv-QxJ" eventType="touchUpInside" id="6PB-B7-91n"/>
@@ -2219,19 +2219,12 @@
                                     <constraint firstAttribute="bottom" secondItem="bDp-UD-Uzv" secondAttribute="bottom" id="zUZ-LI-Dtk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-BK-4Gp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8GN-BK-4Gp" firstAttribute="leading" secondItem="k0H-MH-ZHB" secondAttribute="leading" id="5ZL-hz-SK2"/>
                             <constraint firstItem="lyQ-B6-WlB" firstAttribute="top" secondItem="19Y-as-mYB" secondAttribute="bottom" constant="174" id="GaB-Zq-h7y"/>
-                            <constraint firstItem="8GN-BK-4Gp" firstAttribute="top" secondItem="wmT-sm-fmD" secondAttribute="bottom" id="KLX-vA-Trt"/>
                             <constraint firstItem="19Y-as-mYB" firstAttribute="centerX" secondItem="k0H-MH-ZHB" secondAttribute="centerX" id="QGK-H4-oO7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="19Y-as-mYB" secondAttribute="trailing" constant="6" id="Qz7-6A-1Bg"/>
-                            <constraint firstItem="lyQ-B6-WlB" firstAttribute="top" secondItem="8GN-BK-4Gp" secondAttribute="bottom" id="bQG-7v-8IU"/>
-                            <constraint firstAttribute="trailing" secondItem="8GN-BK-4Gp" secondAttribute="trailing" id="bm0-C6-gwE"/>
                             <constraint firstItem="19Y-as-mYB" firstAttribute="top" secondItem="wmT-sm-fmD" secondAttribute="bottom" constant="183" id="pJf-r2-txa"/>
                             <constraint firstItem="19Y-as-mYB" firstAttribute="leading" secondItem="k0H-MH-ZHB" secondAttribute="leadingMargin" constant="5" id="sCm-pz-npi"/>
                         </constraints>

@@ -62,7 +62,7 @@ class PopUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     
-    func removeAnimate()
+    override func removeAnimate()
     {
         UIView.animateWithDuration(0.25, animations: {
             self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)

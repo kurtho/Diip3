@@ -11,11 +11,15 @@ import UIKit
 class MissionAlertViewController: UIViewController {
     @IBOutlet weak var contentLabel: UILabel!
 
+    
+
+    
     @IBAction func cancelButton(sender: AnyObject) {
     }
     
     @IBAction func okButton(sender: AnyObject) {
-        
+        removeAnimate()
+        print("!@#$%^&*()")
     }
 
     override func viewDidLoad() {

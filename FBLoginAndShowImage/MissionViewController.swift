@@ -24,6 +24,8 @@ class MissionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         showPopUp()
         
         missionImage.clipsToBounds = true
