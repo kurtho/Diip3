@@ -143,7 +143,7 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     
 
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        //If you want your cell should be square in size the return the equal height and width, and make sure you deduct the Section Inset from it.
+        
         return CGSizeMake((self.view.frame.size.width / 2) - 15, (self.view.frame.size.width) - 120)
     }
     

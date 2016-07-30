@@ -83,6 +83,7 @@ class EditAndTypeViewController: UIViewController, UITextViewDelegate {
 extension UIViewController {
     func removeAnimate()
     {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         UIView.animateWithDuration(0.25, animations: {
             self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
             self.view.alpha = 0.0;

@@ -16,6 +16,7 @@ class MissionAlertViewController: UIViewController {
 
     
     @IBAction func cancelButton(sender: AnyObject) {
+        removeAnimate()
     }
     
     @IBAction func okButton(sender: AnyObject) {

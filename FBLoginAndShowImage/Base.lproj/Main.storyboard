@@ -338,6 +338,9 @@
                                 <state key="normal" title="QA配對">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonOne:" destination="Wyi-ej-fiz" eventType="touchUpInside" id="GjN-B5-fLT"/>
                                 </connections>
@@ -802,7 +805,8 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACk-K6-Qpd">
                                 <rect key="frame" x="0.0" y="215" width="375" height="403"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mnD-WD-FqF">
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mnD-WD-FqF">
                                     <size key="itemSize" width="89" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -810,7 +814,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="sk8-Ao-ez3" customClass="QAndACollectionViewCell" customModule="FBLoginAndShowImage" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="0.0" width="181" height="216"/>
+                                        <rect key="frame" x="97" y="0.0" width="181" height="216"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="181" height="216"/>
@@ -1748,21 +1752,21 @@
                         <viewControllerLayoutGuide type="bottom" id="P6f-uQ-lp7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eXk-Av-0jK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5O-mq-eng">
-                                <rect key="frame" x="0.0" y="324" width="320" height="244"/>
+                                <rect key="frame" x="0.0" y="423" width="375" height="244"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bU6-nP-Nje">
-                                        <rect key="frame" x="0.0" y="33" width="320" height="151"/>
+                                        <rect key="frame" x="0.0" y="33" width="375" height="151"/>
                                         <connections>
                                             <outlet property="dataSource" destination="eAn-kj-raD" id="8dq-1w-5Ww"/>
                                             <outlet property="delegate" destination="eAn-kj-raD" id="rr1-T7-BH1"/>
                                         </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-5L-GGh">
-                                        <rect key="frame" x="139" y="15" width="42" height="21"/>
+                                        <rect key="frame" x="166" y="15" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1780,7 +1784,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxO-ex-Gtf">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="400"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="499"/>
                                 <connections>
                                     <action selector="invisibleButton:" destination="eAn-kj-raD" eventType="touchUpInside" id="wSY-NA-DwS"/>
                                 </connections>
@@ -1799,6 +1803,7 @@
                             <constraint firstItem="P6f-uQ-lp7" firstAttribute="top" secondItem="R5O-mq-eng" secondAttribute="bottom" id="xR4-Vb-gbU"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="birthLabel" destination="jAc-5L-GGh" id="Ct0-Rz-qOt"/>
                         <outlet property="pickerView" destination="bU6-nP-Nje" id="2mx-X3-VJ0"/>
@@ -2253,6 +2258,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czY-ws-pyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1453.5" y="1885.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WsO-2z-JDl">
+            <objects>
+                <viewController id="NQq-mL-9py" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vp5-VT-NHW"/>
+                        <viewControllerLayoutGuide type="bottom" id="6GQ-0U-aqd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GKd-65-GgT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFU-Xg-do8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="2307"/>
         </scene>
     </scenes>
     <resources>
