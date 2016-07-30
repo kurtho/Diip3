@@ -81,7 +81,35 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath) as! SearchQACollectionViewCell
-        cell.cellImage.image = UIImage(named: caseTwo[indexPath.row])
+        
+        switch select4Button {
+        case 0:
+            cell.cellImage.image = UIImage(named: caseZero[indexPath.row])
+
+            break
+        case 1:
+            cell.cellImage.image = UIImage(named: caseOne[indexPath.row])
+
+            break
+        case 2:
+            cell.cellImage.image = UIImage(named: caseTwo[indexPath.row])
+            
+            break
+        case 3:
+            cell.cellImage.image = UIImage(named: caseThree[indexPath.row] as! String)
+            
+            break
+        default:
+            break
+        }
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
