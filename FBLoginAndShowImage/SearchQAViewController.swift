@@ -106,21 +106,10 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
             break
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        let bgColorView = UIView()
-        bgColorView.frame = CGRectMake(5, 5, (collectionView.frame.width)-10, (cell.frame.height)-10)
-        bgColorView.backgroundColor = UIColor.clearColor();
-        cell.selectedBackgroundView = bgColorView
-        
+//        let bgColorView = UIView()
+//        bgColorView.frame = CGRectMake(5, 5, (collectionView.frame.width)-10, (cell.frame.height)-10)
+//        bgColorView.backgroundColor = UIColor.clearColor();
+//        cell.selectedBackgroundView = bgColorView
 //        let myBackView=UIView(frame:cell.frame)
 //        myBackView.frame = CGRectMake(5, 5, (collectionView.frame.width)-10, (cell.frame.height)-10)
 //        myBackView.backgroundColor = UIColor.whiteColor();

@@ -19,7 +19,6 @@ class MissionAlertViewController: UIViewController {
     
     @IBAction func okButton(sender: AnyObject) {
         removeAnimate()
-        print("!@#$%^&*()")
     }
 
     override func viewDidLoad() {
