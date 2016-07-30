@@ -34,6 +34,7 @@ class MissionViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         if tabBarController?.tabBar.items?[2].badgeValue != nil {
+            showAnimation()
             showPopUp()
         }
         tabBarController?.tabBar.items?[2].badgeValue = nil

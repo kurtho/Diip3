@@ -53,13 +53,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
         
     }
 
-    @IBAction func testCreateAccount(sender: AnyObject) {
-        
-        
-        passwordShallNotUnder8()
-        
-        
-    }
+
     
     
     @IBAction func createAccountButton(sender: AnyObject) {

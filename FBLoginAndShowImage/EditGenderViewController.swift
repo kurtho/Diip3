@@ -62,7 +62,7 @@ class EditGenderViewController: UIViewController, UIPickerViewDelegate, UIPicker
 //    }
     // MARK: - showAnimation
     
-    func showAnimation() {
+    override func showAnimation() {
         self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
         self.view.alpha = 0.0
         UIView.animateWithDuration(0.25, animations: {
