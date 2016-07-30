@@ -105,6 +105,23 @@ extension UIViewController {
             self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
         })
     }
+    
+    
+    func showPopUp() {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("misionAlert") as!
+        MissionAlertViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMoveToParentViewController(self)
+    }
+    func showAlert() {
+    if tabBarController?.tabBar.items?[2].badgeValue != nil {
+    showAnimation()
+    showPopUp()
+    }
+    tabBarController?.tabBar.items?[2].badgeValue = nil
+    }
 }
 
 

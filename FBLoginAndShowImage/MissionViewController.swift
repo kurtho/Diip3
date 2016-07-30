@@ -33,11 +33,7 @@ class MissionViewController: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        if tabBarController?.tabBar.items?[2].badgeValue != nil {
-            showAnimation()
-            showPopUp()
-        }
-        tabBarController?.tabBar.items?[2].badgeValue = nil
+        showAlert()
 
     }
     
@@ -54,14 +50,5 @@ class MissionViewController: UIViewController {
     
     
     
-    
-    func showPopUp() {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("misionAlert") as!
-        MissionAlertViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMoveToParentViewController(self)
-    }
-    
+
 }

@@ -184,7 +184,7 @@ class EdirProfileTableViewController: UITableViewController, UIImagePickerContro
     
     // MARK: - Pop up edit
     
-    func showPopUp() {
+    override func showPopUp() {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("sbPopUpID") as!
         PopUpViewController
         self.addChildViewController(popOverVC)

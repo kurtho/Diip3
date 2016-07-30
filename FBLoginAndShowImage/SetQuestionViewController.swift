@@ -146,7 +146,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
  // MARK:d - Pop up view
     
     
-    func showPopUp() {
+    override func showPopUp() {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("edit") as!
         EditAndTypeViewController
         self.addChildViewController(popOverVC)

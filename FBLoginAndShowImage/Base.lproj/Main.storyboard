@@ -227,7 +227,7 @@
                             <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerY" secondItem="6Ya-oN-Bva" secondAttribute="centerY" id="VZP-6g-cG7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="cardiogram (2)" id="zkR-ax-z0T"/>
+                    <tabBarItem key="tabBarItem" title="" image="like" id="zkR-ax-z0T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-AS-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -305,7 +305,7 @@
                             <constraint firstItem="4me-sG-2qs" firstAttribute="width" secondItem="OL4-8S-T2x" secondAttribute="width" id="wXg-46-48R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mission" image="Price Tag-40" id="Bd6-t5-XB9"/>
+                    <tabBarItem key="tabBarItem" title="Mission" image="mission" id="Bd6-t5-XB9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="missionImage" destination="zIk-n3-55Y" id="MYj-Ie-UiM"/>
@@ -457,7 +457,7 @@
                             <constraint firstItem="okB-bQ-XLX" firstAttribute="leading" secondItem="gvd-IZ-6y9" secondAttribute="trailing" constant="8" id="xSu-7M-kJC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="Search Filled" id="JYx-ki-Op2"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="JYx-ki-Op2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="4EA-zI-esS" id="n6F-sy-0pC"/>
@@ -1818,7 +1818,7 @@
         <scene sceneID="cvV-Ad-VJJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s4J-ok-1q3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="Contacts" id="3sQ-gZ-rpb"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="3sQ-gZ-rpb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZaO-EB-a6c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2283,16 +2283,17 @@
         <image name="1" width="2560" height="1920"/>
         <image name="Back-48" width="48" height="48"/>
         <image name="Back-64" width="64" height="64"/>
-        <image name="Contacts" width="40" height="40"/>
         <image name="Forward-48" width="48" height="48"/>
         <image name="Forward-64" width="64" height="64"/>
         <image name="Hearts-52 (2)" width="52" height="52"/>
-        <image name="Price Tag-40" width="40" height="40"/>
         <image name="Search Filled" width="30" height="30"/>
         <image name="Speech Bubble-52 (2)" width="52" height="52"/>
         <image name="backGround" width="4000" height="3000"/>
         <image name="backGround1" width="4000" height="3000"/>
-        <image name="cardiogram (2)" width="24" height="24"/>
         <image name="kelly" width="960" height="960"/>
+        <image name="like" width="26" height="27"/>
+        <image name="mission" width="19" height="27"/>
+        <image name="profile" width="26" height="27"/>
+        <image name="search" width="26" height="27"/>
     </resources>
 </document>
