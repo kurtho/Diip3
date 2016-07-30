@@ -11,6 +11,7 @@ import UIKit
 class MissionAlertViewController: UIViewController {
     @IBOutlet weak var contentLabel: UILabel!
 
+    @IBOutlet weak var missionView: UIView!
     
 
     
@@ -24,8 +25,12 @@ class MissionAlertViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
-
-        // Do any additional setup after loading the view.
+        self.missionView.layer.cornerRadius = 8
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {

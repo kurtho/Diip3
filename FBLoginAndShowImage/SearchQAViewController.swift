@@ -46,6 +46,15 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
         //        tabBarController?.tabBar.items?.first?.badgeValue = "1st"
         //        tabBarController?.tabBar.items?[1].badgeValue = "2nd"
         //        tabBarController?.tabBar.items?.last?.badgeValue = "Last"
+
+        
+//        let layout = self.collectionView as! UICollectionViewFlowLayout
+//        //        let width = (Float(UIScreen.mainScreen().bounds.width) - spacingWidth * Float(4 + 1)) / 4
+//        let width = (UIScreen.mainScreen().bounds.width - 2*5)/2
+//        layout.itemSize = CGSizeMake(CGFloat(width), CGFloat(width) )
+//                layout.sectionInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+//                layout.itemSize = CGSizceMake(CGFloat(width), CGFloat(width) )
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -128,9 +137,15 @@ class SearchQAViewController: UIViewController, UICollectionViewDataSource, UICo
         cell.layer.borderWidth = 2.0
         cell.layer.cornerRadius = 4
         
+        
         return cell
     }
     
+
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        //If you want your cell should be square in size the return the equal height and width, and make sure you deduct the Section Inset from it.
+        return CGSizeMake((self.view.frame.size.width / 2) - 15, (self.view.frame.size.width) - 120)
+    }
     
 
 }
