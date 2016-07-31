@@ -12,6 +12,7 @@ target 'FBLoginAndShowImage' do
   pod 'SwiftyJSON'
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'MBCircularProgressBar'
   # Pods for FBLoginAndShowImage
 
 end

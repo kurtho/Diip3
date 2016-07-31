@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-FBLoginAndShowImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,22 +57,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C56C54EF01A3C48C96EA62E75AF276C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>30D7FCF8072F5D59AE1C98D94F9A6EC9</key>
+		<key>212C71B36F09994E011571E5D7E2051D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>337E5C5C5C0706CE77DEAEA37F43C8FA</key>
+		<key>30D7FCF8072F5D59AE1C98D94F9A6EC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>860A9179BCFD9F1C616D8653DB2B4F91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FC4B2785BB68892651401B8A26A15AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0E328E67E6FC2287939F755FF6E7F22</key>
+		<key>9E511658EA91C7CFE031CE478F8892ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D578A0D0E1F74B53516507E938D4EBD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
