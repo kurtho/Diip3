@@ -144,12 +144,12 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		2937A6631D476EFE007F83D6 /* Setting */ = {
+		2937A6631D476EFE007F83D6 /* Like */ = {
 			isa = PBXGroup;
 			children = (
 				2937A6641D476F3F007F83D6 /* SettingViewController.swift */,
 			);
-			name = Setting;
+			name = Like;
 			sourceTree = "<group>";
 		};
 		2937A6891D49D512007F83D6 /* Old */ = {
@@ -218,7 +218,7 @@
 				2937A63A1D45AD67007F83D6 /* Cell */,
 				29F63A381D31091C00178065 /* HomeProfile */,
 				29F63A5B1D329CA000178065 /* Search */,
-				2937A6631D476EFE007F83D6 /* Setting */,
+				2937A6631D476EFE007F83D6 /* Like */,
 				295EAA301D4A177C0014A9BC /* Mission */,
 				298470B11D2A9D1500913250 /* LocalFile */,
 				29F63A5C1D329CBB00178065 /* Others */,

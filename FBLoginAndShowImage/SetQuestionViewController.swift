@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKCoreKit
 
 class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -24,7 +26,19 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.reloadData()
     }
     
+    @IBAction func kurtButton(sender: AnyObject) {
+        try! FIRAuth.auth()!.signOut()
+        FBSDKAccessToken.setCurrentAccessToken(nil)
+        
+        let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("LogginView")
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
    
+    @IBAction func hoButton(sender: AnyObject) {
+        tabBarController?.tabBar.items?[2].badgeValue = "1"
+
+    }
 
     
     let cellValue = ["我最吸引人的地方是","我喜歡與什麼樣的人相處"]
