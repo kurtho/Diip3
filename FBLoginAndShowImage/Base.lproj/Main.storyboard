@@ -192,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-450" y="902"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Like-->
         <scene sceneID="xXm-Os-nR6">
             <objects>
                 <viewController id="Y3W-2Z-lYO" customClass="SettingViewController" customModule="FBLoginAndShowImage" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,7 +227,7 @@
                             <constraint firstItem="ciJ-UR-hQj" firstAttribute="centerY" secondItem="6Ya-oN-Bva" secondAttribute="centerY" id="VZP-6g-cG7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="like" id="zkR-ax-z0T"/>
+                    <tabBarItem key="tabBarItem" title="Like" image="like" id="zkR-ax-z0T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8y-AS-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>

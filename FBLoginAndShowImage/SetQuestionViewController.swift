@@ -54,7 +54,6 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     override func viewWillAppear(animated: Bool) {
-        showAlert()
     }
     
     
