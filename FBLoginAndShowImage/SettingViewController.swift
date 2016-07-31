@@ -34,14 +34,14 @@ class SettingViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return Friend.friendList.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionCell", forIndexPath: indexPath) as! LikeCollectionViewCell
         cell.likeImage.clipsToBounds = true
         cell.likeImage.layer.cornerRadius = cell.likeImage.frame.size.width / 2
-        
+        cell.likeImage.image = UIImage(named: Friend.friendList[indexPath.row].image)
         
         
         return cell
