@@ -8,10 +8,17 @@
 
 import UIKit
 
-class MissionViewController: UIViewController {
+class MissionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var missionImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    
+    
     @IBAction func backWard(sender: AnyObject) {
     }
     
@@ -24,7 +31,7 @@ class MissionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
         tabBarController?.tabBar.items?[2].badgeValue = nil
 
         missionImage.clipsToBounds = true
@@ -48,7 +55,21 @@ class MissionViewController: UIViewController {
     }
     
 
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Mission.missionList.count
 
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MissionTableViewCell
+        
+        
+        return cell
+    }
     
     
     

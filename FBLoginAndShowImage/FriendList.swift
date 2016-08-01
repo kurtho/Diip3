@@ -23,9 +23,10 @@ class Friend {
     
     static var friendList = [
         Friend(name: "匿名獨角獸", image: "woman_1", title: "平面設計師", percent: 65),
-        Friend(name: "匿名犀牛", image: "匿名犀牛", title: "前端工程師", percent: 75),
+        Friend(name: "匿名犀牛", image: "匿名犀牛", title: "前端工程師", percent: 85),
         Friend(name: "匿名毛怪", image: "匿名毛怪", title: "服務業", percent: 10),
         Friend(name: "匿名狐狸", image: "woman-5", title: "吉它手", percent: 45)
     ]
 }
+
 

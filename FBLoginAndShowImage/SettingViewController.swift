@@ -20,7 +20,6 @@ class SettingViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
 
@@ -45,8 +44,9 @@ class SettingViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.likeImage.clipsToBounds = true
         cell.likeImage.layer.cornerRadius = cell.likeImage.frame.size.width / 2
         cell.likeImage.image = UIImage(named: Friend.friendList[indexPath.row].image)
-        cell.progressView.setValue(CGFloat(Friend.friendList[indexPath.row].percent), animateWithDuration: 1.5)
-//        動畫不會跑??
+        cell.progressView.setValue(CGFloat(Friend.friendList[indexPath.row].percent), animateWithDuration: 3)
+
+        //        動畫不會跑??
         cell.likeName.text = Friend.friendList[indexPath.row].name
         cell.liketitle.text = Friend.friendList[indexPath.row].title
         return cell

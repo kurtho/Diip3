@@ -38,6 +38,8 @@
 		29E9E1351D4C60D600B42441 /* MissionAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9E1341D4C60D600B42441 /* MissionAlertViewController.swift */; };
 		29E9E1951D4DBF3D00B42441 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9E1941D4DBF3D00B42441 /* FriendList.swift */; };
 		29E9E1971D4DCDD200B42441 /* LikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9E1961D4DCDD200B42441 /* LikeCollectionViewCell.swift */; };
+		29E9E1991D4E022400B42441 /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9E1981D4E022400B42441 /* MissionTableViewCell.swift */; };
+		29E9E19B1D4E46A200B42441 /* MissionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9E19A1D4E46A200B42441 /* MissionList.swift */; };
 		29F63A371D30F69C00178065 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F63A361D30F69C00178065 /* ProfileData.swift */; };
 		29F63A5E1D32A0D300178065 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F63A5D1D32A0D300178065 /* SearchCollectionViewCell.swift */; };
 		29F63A601D32A3EC00178065 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F63A5F1D32A3EC00178065 /* SearchViewController.swift */; };
@@ -79,6 +81,8 @@
 		29E9E1341D4C60D600B42441 /* MissionAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionAlertViewController.swift; sourceTree = "<group>"; };
 		29E9E1941D4DBF3D00B42441 /* FriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		29E9E1961D4DCDD200B42441 /* LikeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewCell.swift; sourceTree = "<group>"; };
+		29E9E1981D4E022400B42441 /* MissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		29E9E19A1D4E46A200B42441 /* MissionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionList.swift; sourceTree = "<group>"; };
 		29F63A361D30F69C00178065 /* ProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		29F63A5D1D32A0D300178065 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		29F63A5F1D32A3EC00178065 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				295EAA311D4A17B50014A9BC /* MissionViewController.swift */,
+				29E9E1981D4E022400B42441 /* MissionTableViewCell.swift */,
 				29E9E1341D4C60D600B42441 /* MissionAlertViewController.swift */,
 			);
 			name = Mission;
@@ -192,6 +197,7 @@
 				29F63A361D30F69C00178065 /* ProfileData.swift */,
 				298470B21D2A9D4B00913250 /* ProfileImage.swift */,
 				29E9E1941D4DBF3D00B42441 /* FriendList.swift */,
+				29E9E19A1D4E46A200B42441 /* MissionList.swift */,
 			);
 			name = LocalFile;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				292843CF1D3F35F3001681CD /* MembersTableViewController.swift in Sources */,
 				2937A63E1D45BC91007F83D6 /* BasicSegmentTableViewCell.swift in Sources */,
 				294E35ED1D3A348300F36F65 /* EditRelationViewController.swift in Sources */,
+				29E9E1991D4E022400B42441 /* MissionTableViewCell.swift in Sources */,
 				292843F41D3F8796001681CD /* SignUpChooseImageViewController.swift in Sources */,
 				294E35EB1D3A2E5800F36F65 /* EditPlaceViewController.swift in Sources */,
 				2937A6671D47A8C6007F83D6 /* EditAndTypeViewController.swift in Sources */,
@@ -426,6 +433,7 @@
 				298FBF661D23BB8C00F03F4E /* ViewController.swift in Sources */,
 				298470B31D2A9D4B00913250 /* ProfileImage.swift in Sources */,
 				294E35E91D3A22DC00F36F65 /* EditGenderViewController.swift in Sources */,
+				29E9E19B1D4E46A200B42441 /* MissionList.swift in Sources */,
 				298FBF641D23BB8C00F03F4E /* AppDelegate.swift in Sources */,
 				298FBF821D24250500F03F4E /* HomeViewController.swift in Sources */,
 				2937A6601D45E322007F83D6 /* SetQuestionViewController.swift in Sources */,
