@@ -12,6 +12,7 @@ class MissionAlertViewController: UIViewController {
     @IBOutlet weak var contentLabel: UILabel!
 
     @IBOutlet weak var missionView: UIView!
+    @IBOutlet weak var okButton: UIButton!
     
 
     
@@ -19,13 +20,17 @@ class MissionAlertViewController: UIViewController {
         removeAnimate()
     }
     
+    
+    
+
+    
     @IBAction func okButton(sender: AnyObject) {
         removeAnimate()
         let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("Mission")
+        let vc  = mainStoryBoard.instantiateViewControllerWithIdentifier("HomeView") as! UITabBarController
+            vc.selectedIndex = 2
         self.presentViewController(vc, animated: true, completion: nil)
-        
- // paste it
+
         
 
         
@@ -47,15 +52,12 @@ class MissionAlertViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "tab2" {
+//            let destination = segue.destinationViewController as! UITabBarController
+//            destination.selectedIndex = 3
+//        }
+//    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

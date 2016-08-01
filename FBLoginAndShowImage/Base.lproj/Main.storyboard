@@ -445,6 +445,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mission" image="mission" id="Bd6-t5-XB9"/>
+                    <navigationItem key="navigationItem" id="BQR-bk-D06"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="missionImage" destination="zIk-n3-55Y" id="MYj-Ie-UiM"/>
@@ -707,6 +708,7 @@
         <scene sceneID="9Uk-pN-tK3">
             <objects>
                 <tabBarController storyboardIdentifier="HomeView" id="caF-27-zOw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T8w-cF-1C1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="U9u-cU-PwR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -2407,11 +2409,12 @@
                     <connections>
                         <outlet property="contentLabel" destination="FqH-LF-2CS" id="a7z-ZB-csE"/>
                         <outlet property="missionView" destination="19Y-as-mYB" id="flC-tL-Ncg"/>
+                        <outlet property="okButton" destination="2tQ-Cy-0qJ" id="YdG-Fx-aQU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czY-ws-pyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453.5" y="1885.5"/>
+            <point key="canvasLocation" x="498.5" y="1920.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WsO-2z-JDl">

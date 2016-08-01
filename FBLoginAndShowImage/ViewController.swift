@@ -98,6 +98,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDel
                 
                 let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let homeViewController : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("HomeView")
+                
                 self.presentViewController(homeViewController, animated: true, completion: nil)
                 
                 // User is signed in.
