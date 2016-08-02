@@ -11,6 +11,7 @@ import CoreData
 import FBSDKShareKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
         FIRApp.configure()
-
+        let notificationType: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound, UIUserNotificationType.Badge]
+        let notificationSetting = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+        application.registerForRemoteNotifications()
+        application.registerUserNotificationSettings(notificationSetting)
+        
+        
+        
         return true
     }
     
@@ -56,6 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        
+        print("Message~~~ \(userInfo["gcm_message_id"]!)")
+        print(userInfo)
+    }
+    
 
 }
 
