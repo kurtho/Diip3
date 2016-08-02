@@ -326,6 +326,14 @@
 					298FBF5F1D23BB8C00F03F4E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8H7X36TF25;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

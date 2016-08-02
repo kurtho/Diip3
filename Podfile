@@ -13,6 +13,7 @@ target 'FBLoginAndShowImage' do
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'MBCircularProgressBar'
+  pod 'Firebase/Messaging'
   # Pods for FBLoginAndShowImage
 
 end
