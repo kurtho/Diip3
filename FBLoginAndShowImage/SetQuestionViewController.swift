@@ -156,6 +156,7 @@ class SetQuestionViewController: UIViewController, UITableViewDelegate, UITableV
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         showPopUp()
+        print("test1123123123123")
         
     }
     
